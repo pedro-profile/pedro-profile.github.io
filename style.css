@@ -93,12 +93,12 @@ body {
 }
 
 @media only screen and (max-width: 480px) {
-    #skype i { 
+    #teams i { 
             font-size: 40px !important;
         }
     }
 @media only screen and (max-width: 480px) {
-    #skype span {
+    #teams span {
             font-size: 15px !important;
         }
     }
