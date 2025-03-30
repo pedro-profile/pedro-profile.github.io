@@ -103,7 +103,7 @@ body {
         }
     }
 @media only screen and (max-width: 480px) {
-	#teams span {
+	#teams {
 				font-size: 15px !important;
 			}
 		}
