@@ -104,7 +104,9 @@ body {
     }
 @media only screen and (max-width: 480px) {
 	#teams {
-				font-size: 15px !important;
+		.filter-blue{
+			filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+		}
 			}
 		}
 
