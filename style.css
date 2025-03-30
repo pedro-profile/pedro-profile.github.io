@@ -102,11 +102,11 @@ body {
             font-size: 15px !important;
         }
     }
-	@media only screen and (max-width: 480px) {
+
 .filter-blue{
 			filter: invert(56%) sepia(57%) saturate(3733%) hue-rotate(162deg) brightness(100%) contrast(106%);
 		}
-	}
+
 
 
 
