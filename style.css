@@ -104,7 +104,7 @@ body {
     }
 @media only screen and (max-width: 480px) {
 		.filter-blue{
-			filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+			filter: invert(56%) sepia(57%) saturate(3733%) hue-rotate(162deg) brightness(100%) contrast(106%);
 		}
 	}
 
