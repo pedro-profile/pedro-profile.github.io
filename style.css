@@ -87,7 +87,7 @@ body {
 	font-weight: 900;
 }
 /*pt1 - Desktop*/
-#pt2 h2,h3 {
+#pt1 h2,h3 {
 	display: inline-block;
 	text-align: center;
 	font-size: 30px;
@@ -95,7 +95,7 @@ body {
 }
 /*pt1 - smartphones, iPhone, portrait 480x320 phones*/
 @media only screen and (max-width: 480px) {
-	#pt2 h3,h2 {
+	#pt1 h3,h2 {
 		font-size: 20px;
 	}
 }
