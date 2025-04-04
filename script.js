@@ -60,3 +60,15 @@ operable program or batch file.</div>`)
 
  runBasicInput()
 /*--- Linux CLI | END ---*/
+
+
+/*--- WORK | START ---*/ 
+
+
+/* Crane Animation - START */ 
+
+/* Crane Animation - END */ 
+
+
+
+/*--- WORK | END ---*/

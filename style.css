@@ -12,44 +12,21 @@ body {
 	min-height: 1000px;
 }
 
-
-/*--- <div id="contacts"> | Start ---*/  
-
-@media only screen and (max-width: 480px) {
-	#pedro img {
-		width: 110%;
-	}
+.work-urls a {
+	color: #01b3f7;
+	font-weight: bold;
 }
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*--- <div id="contacts"> | Start ---*/  
+@media only screen and (max-width: 480px) {
+	#pedro img {
+		width: 110%;
+	}
+}
 
 
 #contacts p {
@@ -188,8 +165,22 @@ body {
 }
 /*--- <div id="contacts"> | End --- */
 
-/*--- Connect - START */
 
+/*--- stack-header | Start ---*/
+.stack-header h3 {
+	color: #c0c0c0;
+	font-size: 48px;
+}
+
+@media only screen and (max-width: 480px) {
+	.stack-header h3 {
+		font-size: 35px;
+	}
+}
+/*--- stack-header | End ---*/
+
+
+/*--- Pedro Carvalho - START */
 #pedro-carvalho {
 	position: relative;
 	bottom: 25px;
@@ -209,20 +200,10 @@ body {
     font-size: 15px !important;
         }
     }
-
-/*--- Connect - END */
+/*--- Pedro Carvalho - END */
 
 
 /*--- Portfolio | START ---*/
-
-
-
-
-
-
-
-
-
 sec tion-portfolio {
     di splay: block;
     display: inline-block;
@@ -256,7 +237,6 @@ sec tion-portfolio {
     background-size: 25% 50%;
     height: 100vh;
 }
-
 
 
 
@@ -294,14 +274,6 @@ sec tion-portfolio {
 	display: table;
 }
 /*--- Portfolio | END ---*/  
-
-
-
-
-
-
-
-
 
 
 /*--- Linux CLI | START ---*/ 
@@ -347,24 +319,20 @@ word-wrap: break-word;       /* Internet Explorer 5.5+ */
 /*--- Linux CLI | END ---*/
 
 
-/*--- Portfolio | START ---*/
-/* stack-header | Start */
-.stack-header h3 {
-	color: #c0c0c0;
-	font-size: 48px;
-}
+/*--- WORK | START ---*/
 
-@media only screen and (max-width: 480px) {
-	.stack-header h3 {
-		font-size: 35px;
-	}
-}
-/* stack-header | End */
 
-.work-urls a {
-	color: #01b3f7;
-	font-weight: bold;
-}
+/* Crane Animation - END */
+
+/* Crane Animation - END */
+
+
+/*--- WORK | END ---*/
+
+
+
+
+
 
 /*--- <div id="solutions-array"> | Start ---*/
 #secure-solutions h3 {
@@ -391,18 +359,6 @@ word-wrap: break-word;       /* Internet Explorer 5.5+ */
 	font-size: 20px;
 }
 /*phone - smartphones, iPhone, portrait 480x320 phones*/
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media only screen and (max-width: 480px) {
 	#solutions-array h3 {
