@@ -250,7 +250,1155 @@
         <section-work>
         <hr>
 <!-- Crane Animation - START -->
+<!DOCTYPE html>
+<html lang="en" >
 
+<head>
+  <meta charset="UTF-8">
+  
+
+    <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+
+    <link rel="icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+
+    <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg" color="#111" />
+
+
+
+  
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
+
+
+  <title>Crane Loading</title>
+
+    <link rel="canonical" href="https://codepen.io/kasim444/pen/OdLjPb">
+  
+  
+  
+  
+<style>
+html {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  background: radial-gradient(#FFF, #ffd75b);
+}
+
+body {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 100%;
+}
+
+button {
+  margin: 0 0 40px;
+  background: #049de3;
+  color: white;
+  border: none;
+  padding: 0.5em 1em;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 800;
+  outline: none;
+}
+button:hover, button:focus {
+  background: #036998;
+}
+button:active {
+  background: #024666;
+}
+
+.preloader {
+  font-size: 8vmin;
+  perspective: 1000em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transition: all 0.9s ease-in-out;
+  transform: scale(0.9);
+  opacity: 0;
+}
+.preloader.running {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.wrapper {
+  width: 3.6em;
+  height: 3.6em;
+  transform: rotateX(45deg) rotateZ(-45deg);
+  transform-style: preserve-3d;
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+}
+.wrapper > div {
+  width: 1em;
+  height: 1em;
+  padding: 0.1em;
+}
+.wrapper .box-wrapper {
+  transform-style: preserve-3d;
+  width: 1em;
+  height: 1em;
+}
+.wrapper .crate .box {
+  transition: transform 0.5s ease-in-out;
+  transform: translateZ(-0.4em);
+}
+.running .wrapper .crate .box {
+  transform: translateZ(0.5em);
+}
+.wrapper .crate:nth-of-type(7) .box {
+  transition-delay: 0.1s;
+}
+.wrapper .crate:nth-of-type(5) .box {
+  transition-delay: 0.2s;
+}
+.wrapper .crate:nth-of-type(1) .box {
+  transition-delay: 0.3s;
+}
+.wrapper .crate:nth-of-type(3) .box {
+  transition-delay: 0.4s;
+}
+.wrapper .crate:nth-of-type(2) .box {
+  transition-delay: 0.5s;
+}
+.wrapper .crate:nth-of-type(4) .box {
+  transition-delay: 0.6s;
+}
+.wrapper .crate:nth-of-type(6) .box {
+  transition-delay: 0.7s;
+}
+.wrapper .box {
+  width: 1em;
+  height: 1em;
+  position: relative;
+  transform: translateZ(0.5em);
+  transform-style: preserve-3d;
+}
+.wrapper .box .face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #f4b800;
+}
+.wrapper .box .front {
+  transform: rotateX(90deg) translateZ(0.5em);
+}
+.wrapper .box .back {
+  transform: rotateX(-90deg) translateZ(0.5em);
+}
+.wrapper .box .right {
+  transform: rotateY(-90deg) translateZ(0.5em);
+  background: #dba500;
+}
+.wrapper .box .left {
+  transform: rotateY(90deg) translateZ(0.5em);
+  background: #dba500;
+}
+.wrapper .box .top {
+  transform: translateZ(0.5em);
+  background: #ffd042;
+}
+.wrapper .box .bottom {
+  transform: translateZ(-0.49em);
+  background: #ffca28;
+}
+.wrapper .box .hook {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  width: 40%;
+  height: 40%;
+  border: 0.1em solid #755800;
+  border-radius: 30%;
+  box-sizing: border-box;
+  transform: translateZ(0.5em) rotateY(90deg);
+}
+.wrapper .target {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  opacity: 0;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease-in-out;
+  transition-delay: 0.225s;
+}
+.wrapper .target .target-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.transition .wrapper .target {
+  opacity: 1;
+  transform: rotateZ(180deg);
+}
+.transition .wrapper .target .target-wrapper {
+  transform-style: preserve-3d;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-name: transfer;
+          animation-name: transfer;
+}
+.crate-0 .wrapper .target .box-wrapper {
+  transform: translate3d(0em, 0em, 0);
+}
+.crate-1 .wrapper .target .box-wrapper {
+  transform: translate3d(1.2em, 0em, 0);
+}
+.crate-2 .wrapper .target .box-wrapper {
+  transform: translate3d(2.4em, 0em, 0);
+}
+.crate-3 .wrapper .target .box-wrapper {
+  transform: translate3d(0em, 1.2em, 0);
+}
+.crate-4 .wrapper .target .box-wrapper {
+  transform: translate3d(2.4em, 1.2em, 0);
+}
+.crate-5 .wrapper .target .box-wrapper {
+  transform: translate3d(0em, 2.4em, 0);
+}
+.crate-6 .wrapper .target .box-wrapper {
+  transform: translate3d(1.2em, 2.4em, 0);
+}
+.crate-7 .wrapper .target .box-wrapper {
+  transform: translate3d(2.4em, 2.4em, 0);
+}
+.transition .wrapper .source {
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-name: source;
+          animation-name: source;
+}
+.transition .wrapper .destination {
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-name: destination;
+          animation-name: destination;
+}
+.wrapper .base {
+  position: absolute;
+  padding: 0;
+}
+.wrapper .base .box {
+  width: 3.6em;
+  height: 3.6em;
+  transform: translateZ(-0.5em);
+}
+.wrapper .base .box .top {
+  background: #06aefb;
+}
+.wrapper .base .box .front, .wrapper .base .box .back {
+  height: 1em;
+  background: #049de3;
+}
+.wrapper .base .box .back {
+  transform: rotateX(-90deg) translateZ(3.1em);
+}
+.wrapper .base .box .left, .wrapper .base .box .right {
+  width: 1em;
+  background: #037ab1;
+}
+.wrapper .base .box .left {
+  transform: rotateY(90deg) translateZ(3.1em);
+}
+.wrapper .base .box .bottom {
+  transform: translateZ(-1.5em);
+  background: rgba(0, 0, 0, 0.15);
+}
+.wrapper .crane {
+  transform-style: preserve-3d;
+  width: 0.7em;
+  height: 0.7em;
+  padding: 0.25em;
+  position: relative;
+}
+.wrapper .mast {
+  width: 0.7em;
+  height: 4.83em;
+  position: relative;
+  transform-style: preserve-3d;
+  transform-origin: 0 0;
+  transform: rotateX(90deg) translateZ(-0.35em);
+}
+.wrapper .mast .face {
+  color: #ba1236;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0.15em solid;
+  border-left-width: 0.075em;
+  border-right-width: 0.075em;
+  border-top: none;
+  box-sizing: border-box;
+}
+.wrapper .mast .support {
+  height: 0.7em;
+  border-top: 0.15em solid;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+}
+.wrapper .mast .support:after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  margin-top: -0.0375em;
+  left: -50%;
+  width: 200%;
+  height: 0;
+  border-top: 0.075em solid;
+  transform: rotate(45deg);
+}
+.wrapper .mast .front, .wrapper .mast .back {
+  color: #8b0d29;
+}
+.wrapper .mast .front {
+  transform: rotateY(90deg) translateZ(0.35em);
+}
+.wrapper .mast .back {
+  transform: rotateY(-90deg) translateZ(0.35em);
+}
+.wrapper .mast .left {
+  transform: translateZ(0.35em);
+}
+.wrapper .mast .right {
+  transform: rotateY(180deg) translateZ(0.35em);
+}
+.wrapper .cap-wrapper {
+  transform-style: preserve-3d;
+  position: absolute;
+  top: -0.1em;
+  left: -0.1em;
+  width: 1em;
+  height: 1em;
+  transform: translateZ(4.9em);
+}
+.wrapper .cap {
+  transform-style: preserve-3d;
+  background: #da1540;
+  border: 0.075em solid #a2102f;
+  width: 1em;
+  height: 1em;
+  position: absolute;
+  top: 0.1em;
+  left: 0.1em;
+  border-radius: 0.2em;
+  transition: transform 1.5s ease-in-out;
+}
+.transition .wrapper .cap {
+  transition-delay: 0.225s;
+  transition-duration: 0.6s;
+}
+.crate-0 .wrapper .cap {
+  transform: rotateZ(135deg);
+}
+.crate-0.transition .wrapper .cap {
+  transform: rotateZ(315deg);
+}
+.crate-1 .wrapper .cap {
+  transform: rotateZ(180deg);
+}
+.crate-1.transition .wrapper .cap {
+  transform: rotateZ(360deg);
+}
+.crate-2 .wrapper .cap {
+  transform: rotateZ(-135deg);
+}
+.crate-2.transition .wrapper .cap {
+  transform: rotateZ(45deg);
+}
+.crate-3 .wrapper .cap {
+  transform: rotateZ(90deg);
+}
+.crate-3.transition .wrapper .cap {
+  transform: rotateZ(270deg);
+}
+.crate-4 .wrapper .cap {
+  transform: rotateZ(-90deg);
+}
+.crate-4.transition .wrapper .cap {
+  transform: rotateZ(90deg);
+}
+.crate-5 .wrapper .cap {
+  transform: rotateZ(45deg);
+}
+.crate-5.transition .wrapper .cap {
+  transform: rotateZ(225deg);
+}
+.crate-6 .wrapper .cap {
+  transform: rotateZ(0deg);
+}
+.crate-6.transition .wrapper .cap {
+  transform: rotateZ(180deg);
+}
+.crate-7 .wrapper .cap {
+  transform: rotateZ(-45deg);
+}
+.crate-7.transition .wrapper .cap {
+  transform: rotateZ(135deg);
+}
+.wrapper .cap .tower {
+  width: 0.7em;
+  height: 2.1em;
+  position: relative;
+  transform-style: preserve-3d;
+  transform-origin: 0 0;
+  transform: rotateX(90deg) translate3d(0.15em, 0, -0.5em);
+}
+.wrapper .cap .tower > .cable {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -0.015em;
+  border-left: 0.03em solid black;
+  transform-style: preserve-3d;
+  transform-origin: 0 100%;
+}
+.wrapper .cap .tower > .cable:after {
+  margin-left: -0.015em;
+  content: " ";
+  height: 100%;
+  display: block;
+  border-left: 0.03em solid black;
+  transform: rotateY(90deg);
+}
+.wrapper .cap .tower > .cable.front {
+  height: 3.36em;
+  transform: rotateX(63.4deg);
+}
+.wrapper .cap .tower > .cable.mid-front {
+  height: 1.8em;
+  transform: rotateX(30deg);
+}
+.wrapper .cap .tower > .cable.mid-back {
+  height: 1.8em;
+  transform: rotateX(-30deg);
+}
+.wrapper .cap .tower > .cable.back {
+  height: 2.2em;
+  transform: rotateX(-46.8deg);
+}
+.wrapper .cap .tower > .face {
+  color: #ba1236;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  top: 0;
+  left: 0;
+}
+.wrapper .cap .tower > .face.front {
+  transform: rotateY(90deg) translateZ(0.35em);
+}
+.wrapper .cap .tower > .face.back {
+  transform: rotateY(-90deg) translateZ(0.35em);
+}
+.wrapper .cap .tower > .face.left {
+  transform: translateZ(0.35em);
+}
+.wrapper .cap .tower > .face.right {
+  transform: rotateY(180deg) translateZ(0.35em);
+}
+.wrapper .cap .tower > .face.front, .wrapper .cap .tower > .face.back {
+  color: #8b0d29;
+}
+.wrapper .cap .tower > .face .support {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  box-sizing: border-box;
+  transform-style: preserve-3d;
+}
+.wrapper .cap .tower > .face .support:after {
+  content: " ";
+  position: absolute;
+}
+.wrapper .cap .tower > .face .support.right {
+  border-right: 0.075em solid;
+  transform-origin: 100% 0;
+  transform: rotateX(-8deg) rotateZ(8deg);
+}
+.wrapper .cap .tower > .face .support.right:after {
+  top: 40%;
+  right: -0.15em;
+  width: 0.7em;
+  border-top: 0.075em solid;
+  transform: rotateZ(45deg);
+}
+.wrapper .cap .tower > .face .support.left {
+  border-left: 0.075em solid;
+  transform-origin: 0 0;
+  transform: rotateX(-8deg) rotateZ(-8deg);
+}
+.wrapper .cap .tower > .face .support.left:after {
+  top: 59%;
+  left: -0.13em;
+  width: 0.5em;
+  border-top: 0.075em solid;
+  transform: rotateZ(-45deg);
+}
+.wrapper .arm {
+  color: #D1143D;
+  position: absolute;
+  border: 0.075em solid;
+  width: 0.7em;
+  top: 1em;
+  left: 0.15em;
+  box-sizing: border-box;
+  transform-style: preserve-3d;
+}
+.wrapper .arm.back {
+  bottom: 1em;
+  top: auto;
+}
+.wrapper .arm .segment {
+  height: 0.7em;
+  position: relative;
+  transform-style: preserve-3d;
+  border-bottom: 0.075em solid;
+  box-sizing: border-box;
+  margin: 0 -0.075em 0;
+}
+.wrapper .arm .segment:last-child {
+  margin-bottom: -0.075em;
+}
+.wrapper .arm .segment:last-child .face:before {
+  display: none;
+}
+.wrapper .arm .segment .face {
+  position: absolute;
+  width: 100%;
+  height: 0.7em;
+  transform-style: preserve-3d;
+  top: -0.0375em;
+}
+.wrapper .arm .segment .face:before {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  height: 100%;
+  border-right: 0.075em solid;
+}
+.wrapper .arm .segment .face .supports {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  overflow: hidden;
+}
+.wrapper .arm .segment .face .supports:before, .wrapper .arm .segment .face .supports:after {
+  content: " ";
+  position: absolute;
+  border-top: 0.075em solid;
+  width: 150%;
+}
+.wrapper .arm .segment .face .supports:before {
+  transform-origin: 0 0;
+  transform: rotateZ(24deg);
+  top: 0;
+}
+.wrapper .arm .segment .face .supports:after {
+  transform-origin: 0 100%;
+  transform: rotateZ(-24deg);
+  bottom: 0;
+}
+.wrapper .arm .segment .face.left {
+  transform: rotateY(-60deg);
+  transform-origin: 0 0;
+  color: #8b0d29;
+}
+.wrapper .arm .segment .face.right {
+  transform: rotateY(60deg);
+  transform-origin: 100% 0;
+  color: #b01133;
+}
+.wrapper .arm .segment .face.right:before {
+  left: 0;
+  right: auto;
+}
+.wrapper .arm .segment .face.right .supports {
+  transform: rotateZ(180deg);
+}
+.wrapper .trolley {
+  transform-style: preserve-3d;
+  width: 0.85em;
+  height: 0.7em;
+  position: absolute;
+  background: #5d091b;
+  top: 0.8em;
+  left: -0.15em;
+  transform: translateZ(-0.02em);
+  transition: transform 0.5s ease-in-out;
+}
+.wrapper .trolley:before, .wrapper .trolley:after {
+  content: " ";
+  position: absolute;
+  width: 0.15em;
+  height: 100%;
+  background: #2e040d;
+}
+.wrapper .trolley:before {
+  transform: rotateY(-90deg);
+  transform-origin: 0% 50%;
+  left: 0;
+}
+.wrapper .trolley:after {
+  transform: rotateY(90deg);
+  transform-origin: 100% 50%;
+  right: 0;
+}
+.crate-1 .wrapper .trolley, .crate-3 .wrapper .trolley, .crate-4 .wrapper .trolley, .crate-6 .wrapper .trolley {
+  transform: translateZ(-0.02em) translateY(-0.5em);
+}
+.wrapper .trolley .cables, .wrapper .trolley .pully {
+  transform-style: preserve-3d;
+  width: 0.2em;
+  border: 0.03em solid black;
+  box-sizing: border-box;
+  position: absolute;
+}
+.wrapper .trolley .cables:before, .wrapper .trolley .cables:after, .wrapper .trolley .pully:before, .wrapper .trolley .pully:after {
+  content: " ";
+  position: absolute;
+  height: 100%;
+  top: 0.2em;
+  border-left: 0.03em solid black;
+  transform: rotateY(90deg);
+}
+.wrapper .trolley .cables:before, .wrapper .trolley .pully:before {
+  left: -0.015em;
+}
+.wrapper .trolley .cables:after, .wrapper .trolley .pully:after {
+  right: -0.015em;
+}
+.wrapper .trolley .cables {
+  transform-style: preserve-3d;
+  top: 50%;
+  left: 50%;
+  margin-top: -0.1em;
+  height: 1.2em;
+  border-bottom: none;
+  transform-origin: 0 0;
+  transform: rotateX(-90deg) rotateY(-90deg);
+}
+.wrapper .trolley .pully {
+  height: 2.38em;
+  top: 100%;
+  left: -0.03em;
+  border-top: none;
+  border-bottom-width: 0.2em;
+  border-radius: 0 0 15% 15%;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-name: pully-reset;
+          animation-name: pully-reset;
+}
+.transition .wrapper .trolley .pully {
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-name: pully;
+          animation-name: pully;
+}
+.wrapper .trolley .hook {
+  position: absolute;
+  top: 100%;
+  margin-top: 0.2em;
+  transition: transform 0.6s ease-in-out;
+  left: -0.08em;
+  width: 0.3em;
+  transform-style: preserve-3d;
+}
+.wrapper .trolley .hook:after {
+  content: " ";
+  position: absolute;
+  width: 0.3em;
+  height: 0.3em;
+  border: 0.1em solid;
+  border-right-color: transparent;
+  box-sizing: border-box;
+  border-radius: 50%;
+  transform: rotateZ(-40deg);
+}
+.crate-0 .wrapper .trolley .hook, .crate-7 .wrapper .trolley .hook {
+  transform: rotateY(45deg);
+}
+.crate-1 .wrapper .trolley .hook, .crate-6 .wrapper .trolley .hook {
+  transform: rotateY(90deg);
+}
+.crate-2 .wrapper .trolley .hook, .crate-5 .wrapper .trolley .hook {
+  transform: rotateY(-45deg);
+}
+
+@-webkit-keyframes pully {
+  0% {
+    transform: translateZ(0);
+  }
+  30%, 70% {
+    transform: translateY(-1.2em);
+  }
+  100% {
+    transform: translateZ(0);
+  }
+}
+
+@keyframes pully {
+  0% {
+    transform: translateZ(0);
+  }
+  30%, 70% {
+    transform: translateY(-1.2em);
+  }
+  100% {
+    transform: translateZ(0);
+  }
+}
+@-webkit-keyframes pully-reset {
+  0% {
+    transform: translateZ(0);
+  }
+  30%, 70% {
+    transform: translateY(-1.2em);
+  }
+  100% {
+    transform: translateZ(0);
+  }
+}
+@keyframes pully-reset {
+  0% {
+    transform: translateZ(0);
+  }
+  30%, 70% {
+    transform: translateY(-1.2em);
+  }
+  100% {
+    transform: translateZ(0);
+  }
+}
+@-webkit-keyframes crane-move {
+  0%, 15%, 100% {
+    transform: rotateZ(0deg);
+  }
+  35%, 50% {
+    transform: rotateZ(180deg);
+  }
+}
+@keyframes crane-move {
+  0%, 15%, 100% {
+    transform: rotateZ(0deg);
+  }
+  35%, 50% {
+    transform: rotateZ(180deg);
+  }
+}
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotateX(45deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(45deg) rotateZ(360deg);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotateX(45deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(45deg) rotateZ(360deg);
+  }
+}
+@-webkit-keyframes source {
+  0%, 30% {
+    transform: translateZ(-0.9em);
+  }
+  70% {
+    transform: translateZ(0);
+  }
+}
+@keyframes source {
+  0%, 30% {
+    transform: translateZ(-0.9em);
+  }
+  70% {
+    transform: translateZ(0);
+  }
+}
+@-webkit-keyframes destination {
+  0%, 30% {
+    transform: translateZ(0);
+  }
+  70%, 100% {
+    transform: translateZ(-0.9em);
+  }
+}
+@keyframes destination {
+  0%, 30% {
+    transform: translateZ(0);
+  }
+  70%, 100% {
+    transform: translateZ(-0.9em);
+  }
+}
+@-webkit-keyframes transfer {
+  30%, 70% {
+    transform: translateZ(1.2em);
+  }
+  100% {
+    transform: translateZ(0);
+  }
+}
+@keyframes transfer {
+  30%, 70% {
+    transform: translateZ(1.2em);
+  }
+  100% {
+    transform: translateZ(0);
+  }
+}
+</style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+</head>
+
+<body translate="no">
+  <button id="start">Toggle Crane</button>
+<div class="preloader" id="preloader">
+  <div class="wrapper">
+    <div class="box-wrapper crate">
+      <div class="box">
+        <div class="face top"></div>
+        <div class="face left"></div>
+        <div class="face right"></div>
+        <div class="face back"></div>
+        <div class="face front"></div>
+        <div class="face bottom"></div>
+        <div class="hook"></div>
+      </div>
+    </div>
+    <div class="box-wrapper crate">
+      <div class="box">
+        <div class="face top"></div>
+        <div class="face left"></div>
+        <div class="face right"></div>
+        <div class="face back"></div>
+        <div class="face front"></div>
+        <div class="face bottom"></div>
+        <div class="hook"></div>
+      </div>
+    </div>
+    <div class="box-wrapper crate">
+      <div class="box">
+        <div class="face top"></div>
+        <div class="face left"></div>
+        <div class="face right"></div>
+        <div class="face back"></div>
+        <div class="face front"></div>
+        <div class="face bottom"></div>
+        <div class="hook"></div>
+      </div>
+    </div>
+    <div class="box-wrapper crate">
+      <div class="box">
+        <div class="face top"></div>
+        <div class="face left"></div>
+        <div class="face right"></div>
+        <div class="face back"></div>
+        <div class="face front"></div>
+        <div class="face bottom"></div>
+        <div class="hook"></div>
+      </div>
+    </div>
+    <div class="crane">
+      <div class="mast">
+        <div class="face left">
+          <div class="support"></div>
+          <div class="support"></div>
+          <div class="support"></div>
+          <div class="support"></div>
+          <div class="support"></div>
+          <div class="support"></div>
+          <div class="support"></div>
+        </div>
+        <div class="face right">
+          <div class="support"></div>
+          <div class="support"></div>
+          <div class="support"></div>
+          <div class="support"></div>
+          <div class="support"></div>
+          <div class="support"></div>
+          <div class="support"></div>
+        </div>
+        <div class="face back">
+          <div class="support"></div>
+          <div class="support"></div>
+          <div class="support"></div>
+          <div class="support"></div>
+          <div class="support"></div>
+          <div class="support"></div>
+          <div class="support"></div>
+        </div>
+        <div class="face front">
+          <div class="support"></div>
+          <div class="support"></div>
+          <div class="support"></div>
+          <div class="support"></div>
+          <div class="support"></div>
+          <div class="support"></div>
+          <div class="support"></div>
+        </div>
+      </div>
+      <div class="cap-wrapper">
+        <div class="cap">
+          <div class="tower">
+            <div class="face left">
+              <div class="support left"></div>
+              <div class="support right"></div>
+            </div>
+            <div class="face right">
+              <div class="support left"></div>
+              <div class="support right"></div>
+            </div>
+            <div class="face back">
+              <div class="support left"></div>
+              <div class="support right"></div>
+            </div>
+            <div class="face front">
+              <div class="support left"></div>
+              <div class="support right"></div>
+            </div>
+            <div class="cable front"></div>
+            <div class="cable mid-front"></div>
+            <div class="cable mid-back"></div>
+            <div class="cable back"></div>
+          </div>
+          <div class="arm">
+            <div class="trolley">
+              <div class="cables">
+                <div class="pully">
+                  <div class="hook"></div>
+                </div>
+              </div>
+            </div>
+            <div class="segment">
+              <div class="face left">
+                <div class="supports"></div>
+              </div>
+              <div class="face right">
+                <div class="supports"></div>
+              </div>
+            </div>
+            <div class="segment">
+              <div class="face left">
+                <div class="supports"></div>
+              </div>
+              <div class="face right">
+                <div class="supports"></div>
+              </div>
+            </div>
+            <div class="segment">
+              <div class="face left">
+                <div class="supports"></div>
+              </div>
+              <div class="face right">
+                <div class="supports"></div>
+              </div>
+            </div>
+            <div class="segment">
+              <div class="face left">
+                <div class="supports"></div>
+              </div>
+              <div class="face right">
+                <div class="supports"></div>
+              </div>
+            </div>
+          </div>
+          <div class="arm back">
+            <div class="segment">
+              <div class="face left">
+                <div class="supports"></div>
+              </div>
+              <div class="face right">
+                <div class="supports"></div>
+              </div>
+            </div>
+            <div class="segment">
+              <div class="face left">
+                <div class="supports"></div>
+              </div>
+              <div class="face right">
+                <div class="supports"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="box-wrapper crate">
+      <div class="box">
+        <div class="face top"></div>
+        <div class="face left"></div>
+        <div class="face right"></div>
+        <div class="face back"></div>
+        <div class="face front"></div>
+        <div class="face bottom"></div>
+        <div class="hook"></div>
+      </div>
+    </div>
+    <div class="box-wrapper crate">
+      <div class="box">
+        <div class="face top"></div>
+        <div class="face left"></div>
+        <div class="face right"></div>
+        <div class="face back"></div>
+        <div class="face front"></div>
+        <div class="face bottom"></div>
+        <div class="hook"></div>
+      </div>
+    </div>
+    <div class="box-wrapper crate">
+      <div class="box">
+        <div class="face top"></div>
+        <div class="face left"></div>
+        <div class="face right"></div>
+        <div class="face back"></div>
+        <div class="face front"></div>
+        <div class="face bottom"></div>
+        <div class="hook"></div>
+      </div>
+    </div>
+    <div class="box-wrapper crate">
+      <div class="box">
+        <div class="face top"></div>
+        <div class="face left"></div>
+        <div class="face right"></div>
+        <div class="face back"></div>
+        <div class="face front"></div>
+        <div class="face bottom"></div>
+        <div class="hook"></div>
+      </div>
+    </div>
+    <div class="target">
+      <div class="target-wrapper">
+        <div class="box-wrapper">
+          <div class="box">
+            <div class="face top"></div>
+            <div class="face left"></div>
+            <div class="face right"></div>
+            <div class="face back"></div>
+            <div class="face front"></div>
+            <div class="face bottom"></div>
+            <div class="hook"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="box-wrapper base">
+      <div class="box">
+        <div class="face top"></div>
+        <div class="face left"></div>
+        <div class="face right"></div>
+        <div class="face back"></div>
+        <div class="face front"></div>
+        <div class="face bottom"></div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+      <script id="rendered-js" >
+class Preloader {
+
+  start() {
+    if (this.running) {
+      return;
+    }
+
+    this.target.classList.add('running');
+    this.pickCrate();
+  }
+
+  stop() {
+    clearTimeout(this.timeout);
+    this.target.classList.remove('running');
+    this.target.classList.remove('transition');
+    this.target.classList.remove(`crate-${this.current}`);
+    this.crates[this.current].classList.remove('source');
+    this.crates[this.crates.length - 1 - this.current].classList.remove('destination');
+  }
+
+  get running() {
+    return this.target.classList.contains('running');
+  }
+
+  constructor(target) {
+    this.current = 0;
+    this.target = target;
+    this.crates = target.getElementsByClassName('crate');
+  }
+
+  pickCrate() {
+    this.target.classList.remove(`crate-${this.current}`, 'transition');
+    this.crates[this.current].classList.remove('source');
+    this.crates[this.crates.length - 1 - this.current].classList.remove('destination');
+
+    this.current = Math.floor(Math.random() * this.crates.length);
+
+    this.target.classList.add(`crate-${this.current}`);
+    this.timeout = setTimeout(this.grabCrate.bind(this), 1500);
+  }
+
+  grabCrate() {
+    this.target.classList.add('transition');
+    this.crates[this.current].classList.add('source');
+    this.crates[this.crates.length - 1 - this.current].classList.add('destination');
+
+    this.timeout = setTimeout(this.pickCrate.bind(this), 1500);
+  }}
+
+
+const button = document.getElementById('start');
+const preloader = new Preloader(document.getElementById('preloader'));
+
+setTimeout(() => {
+  preloader.start();
+}, 10);
+
+button.addEventListener('click', () => {
+  if (preloader.running) {
+    preloader.stop();
+  } else {
+    preloader.start();
+  }
+});
+//# sourceURL=pen.js
+    </script>
+
+  
+</body>
+
+</html>
 <!-- Crane Animation - END --> 
         <div class="stack-header">
           <h3>Work 🏗️</h3>
