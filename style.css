@@ -168,7 +168,7 @@ body {
 
 .join.hobbies h3, h4, {
 	display: inline-block;
-	text-align: center;
+	text-align: right;
 	color: grey;
 	font-size: 60px;
 }
