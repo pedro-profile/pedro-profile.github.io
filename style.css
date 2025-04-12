@@ -458,7 +458,7 @@ word-wrap: break-word;       /* Internet Explorer 5.5+ */
 	top: -100px;
   }
 
-.bg__loyout-wrapper_guitar {
+.bg__loyout-wrapper {
 	position: relative;
 	t op: 0px;
 	max-width: 100%;
