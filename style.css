@@ -19,7 +19,7 @@ body {
 
 
 /*Pure CSS Picture Frame - Start - https://codepen.io/Brian_Gioia/pen/egabNm */
-#main-frame {
+#frame-photo {
 	position: relative;
 	top: -100px;
   }
