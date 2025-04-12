@@ -549,7 +549,7 @@ word-wrap: break-word;       /* Internet Explorer 5.5+ */
 	opacity: 0.2;
   }
   
-  .bg__frame {
+  .bg__frame_guitar {
 	background-color: #1B1B25;
 	height: 500px;
 	width: 727px;
