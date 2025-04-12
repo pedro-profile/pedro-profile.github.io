@@ -129,7 +129,6 @@ body {
 @media only screen and (max-width: 480px) {
 	#pedro img {
 		width: 110%;
-		top: 100px;
 	}
 }
 
