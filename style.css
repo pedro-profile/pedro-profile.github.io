@@ -540,7 +540,7 @@ word-wrap: break-word;       /* Internet Explorer 5.5+ */
 	position: absolute;
   }
   
-  .bg__frame-inner-photo-shadow_guitar {
+  .bg__frame-inner-photo-shadow {
 	max-width: 100%;
 	height: 100%;
 	-webkit-box-shadow: inset -2px 1px 12px -1px #212121;
