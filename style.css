@@ -550,7 +550,7 @@ word-wrap: break-word;       /* Internet Explorer 5.5+ */
   }
   
   .bg__frame {
-	background-color: #eceff1;
+	background-color: #000;
 	height: 500px;
 	width: 727px;
 	margin: -170px -270px;
