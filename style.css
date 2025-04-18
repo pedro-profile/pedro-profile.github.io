@@ -278,7 +278,7 @@ body {
 
 #join.section.element h3, h4, p, {
 	display: inline-block;
-	text-align: right;
+	text-align: left;
 	color: grey;
 	font-size: 60px;
 }
