@@ -187,7 +187,7 @@ body {
 	}
 }
 /*pt2 - Desktop*/
-#pt2 h2,h3 {
+.pt2 h2,h3 {
 	display: inline-block;
 	text-align: center;
 	font-size: 30px;
@@ -195,7 +195,7 @@ body {
 }
 /*pt2 - smartphones, iPhone, portrait 480x320 phones*/
 @media only screen and (max-width: 480px) {
-	#pt2 h3,h2 {
+	.pt2 h3,h2 {
 		font-size: 20px;
 	}
 }
@@ -236,7 +236,7 @@ body {
     }
 
 /* Teams Icon Color Filter - Start */
-.filter-yellow{
+#filter-teams{
 	filter: invert(68%) sepia(64%) saturate(724%) hue-rotate(5deg) brightness(113%) contrast(104%);
 		}
 /* Teams Icon Color Filter - End */
@@ -563,6 +563,21 @@ word-wrap: break-word;       /* Internet Explorer 5.5+ */
   }
   /* Frame-Guitar - End */
 /*Pure CSS Picture Frame - End */
+
+
+
+
+
+
+
+/* Hobbies Img Color Filter - Start */
+#filter-hobbies{
+	filter: invert(68%) sepia(64%) saturate(724%) hue-rotate(5deg) brightness(113%) contrast(104%);
+		}
+/* Hobbies Img Color Filter - End */
+
+
+
 
 
 
