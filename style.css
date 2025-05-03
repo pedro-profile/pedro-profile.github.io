@@ -200,7 +200,7 @@ body {
 	}
 }
 
-#self-employed p,h2,h4 {
+#self-employed p,h1,h4 {
 	display: inline-block;
 	text-align: center;
 	posi tion: relative;
