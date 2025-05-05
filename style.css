@@ -201,8 +201,6 @@ body {
 }
 /*pt2 - Desktop*/
 .pt2 h2,h3 {
-	position: relative;
-	top: -400px; 
 	display: inline-block;
 	text-align: center;
 	font-size: 30px;
