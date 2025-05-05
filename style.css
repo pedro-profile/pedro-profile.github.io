@@ -28,7 +28,9 @@ body {
 	right: 150px;
 	color: white;
 
-
+	img {
+		max-width: 100%;
+	  }
    }
 #logo #text:has(h1) {
 	position: relative;
