@@ -37,7 +37,7 @@ font-size: 3rem;
 #logo #text:has(h1) {
 	position: relative;
 	top: -3rem;
-	transform: translateX(rem);
+	transform: translateX(2rem);
 	font-family: Snell Roundhand, cursive;
 
   }
@@ -45,7 +45,7 @@ font-size: 3rem;
 
 #header  {
 	position: relative;
-	top: -0px; 
+	top: -10px; 
    }
 
 /*Pure CSS Picture Frame - Start - https://codepen.io/Brian_Gioia/pen/egabNm */
