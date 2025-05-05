@@ -22,22 +22,12 @@ body {
 	display:flex;
 	align-items:center;
 	position: relative;
-	max-width:180px;
-	height:auto;   
+	width:180px;
+	height:180px;   
 	top: 40px; 
 	right: 150px;
 	color: white;
-
-	img {
-		max-width: 100%;
-	  }
    }
-#logo #text:has(h1) {
-	position: relative;
-	top: 10
-	transform: translateX(41.5px);
-  }
-
 
 #header  {
 	position: relative;
