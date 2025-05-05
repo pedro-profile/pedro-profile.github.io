@@ -28,6 +28,7 @@ top: 40px;
 right: 150px;
 color: white;
 
+
 	img {
 		max-width: 100%;
 	  }
@@ -38,7 +39,7 @@ color: white;
 	top: -3rem;
 	transform: translateX(4.2rem);
 	font-family: Snell Roundhand, cursive;
-	font-size: 120px;
+
   }
 
 
