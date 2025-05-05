@@ -23,7 +23,7 @@ body {
 	align-items:center;
 	position: relative;
 	width:180px;
-	height:180px;   
+	height:auto;   
 	top: 40px; 
 	right: 150px;
 	color: white;
@@ -589,7 +589,7 @@ word-wrap: break-word;       /* Internet Explorer 5.5+ */
 
 #hobbies img {
 	height:10%;
-	width: 100%;
+	width: 10%;
  }
 
 
