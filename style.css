@@ -588,6 +588,7 @@ word-wrap: break-word;       /* Internet Explorer 5.5+ */
 /*Pure CSS Picture Frame - End */
 
 #hobbies img {
+	height10%;
 	width: 100%
  }
 
