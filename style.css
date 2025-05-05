@@ -27,6 +27,11 @@ body {
 	top: 40px; 
 	right: 150px;
 	color: white;
+
+	img {
+		max-width: 100%;
+	  }
+
    }
 
 #header  {
