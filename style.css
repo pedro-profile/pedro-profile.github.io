@@ -21,8 +21,8 @@ body {
 #logo {
 	display:flex;
 	align-items:center;
-
-	width="140px" height="70px" alt="" style="border-style:none; position: relative; top: -10px; left: 0px;
+	position: relative;
+	width:140px height="70px" alt="" style="border-style:none;  top: -10px; left: 0px;
 
 
 
