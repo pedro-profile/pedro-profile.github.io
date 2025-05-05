@@ -35,7 +35,7 @@ body {
 /* Frame-Photo - Start */
 #frame-photo {
 	position: relative;
-	top: 100px;
+	bottom: 100px;
   }
 
 .bg__loyout-wrapper {
