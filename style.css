@@ -19,16 +19,27 @@ body {
 
 
 #logo img,h1 {
-	display:flex;
-	align-items:center;
-	position: relative;
-	max-width:180px;
-	height:auto;   
-	top: 40px; 
-	right: 150px;
-	color: white;
-	
+display:flex;
+align-items:center;
+position: relative;
+max-width:180px;
+height:auto;
+top: 40px;
+right: 150px;
+color: white;
+
+	img {
+		max-width: 100%;
+	  }
    }
+ 
+#logo #text:has(h1) {
+	position: relative;
+	top: -3rem;
+	transform: translateX(4.2rem);
+	font-family: Snell Roundhand, cursive                    ;
+  }
+
 
 #header  {
 	position: relative;
