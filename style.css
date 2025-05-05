@@ -18,6 +18,13 @@ body {
 }
 
 
+#logo {
+	display:flex;
+	align-items:center;
+   }
+
+
+
 /*Pure CSS Picture Frame - Start - https://codepen.io/Brian_Gioia/pen/egabNm */
 /* Frame-Photo - Start */
 #frame-photo {
