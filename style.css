@@ -18,7 +18,7 @@ body {
 }
 
 
-#lo go img,h1 {
+#logo img,h1 {
 	display:flex;
 	align-items:center;
 	position: relative;
@@ -29,13 +29,21 @@ body {
 	color: white;
    }
 
+#header  {
+	position: relative;
+	top: -90px; 
+
+   }
+
+
+
 
 
 /*Pure CSS Picture Frame - Start - https://codepen.io/Brian_Gioia/pen/egabNm */
 /* Frame-Photo - Start */
 #frame-photo {
 	position: relative;
-	bottom:450px;
+	bottom:80px;
   }
 
 .bg__loyout-wrapper {
