@@ -27,16 +27,8 @@ body {
 	top: 40px; 
 	right: 150px;
 	color: white;
-
-	img {
-		max-width: 100%;
-	  }
+	
    }
-#logo #text:has(h1) {
-	position: relative;
-	transform: translateX(41.5px);
-  }
-
 
 #header  {
 	position: relative;
