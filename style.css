@@ -34,9 +34,8 @@ body {
    }
 #logo #text:has(h1) {
 	position: relative;
-	top: -3rem;
-	transform: translateX(4.2rem);
-	font-family: 'Great Vibes', Helvetica, sans-serif                    ;
+	top: 10
+	transform: translateX(41.5px);
   }
 
 
