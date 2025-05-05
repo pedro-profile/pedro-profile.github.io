@@ -587,7 +587,9 @@ word-wrap: break-word;       /* Internet Explorer 5.5+ */
   /* Frame-Guitar - End */
 /*Pure CSS Picture Frame - End */
 
-
+#logo img {
+	width: 100%
+ }
 
 
 /* Hobby Section - END */
