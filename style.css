@@ -22,9 +22,9 @@ body {
 display: flex;
 align-items: center;
 position: relative;
-max-width: 11.25rem;
+max-width: 180px;
 height: auto;
-top: 40px;
+top: 60px;
 right: 150px;
 color: white;
 
