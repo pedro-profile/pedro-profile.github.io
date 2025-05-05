@@ -32,7 +32,7 @@ body {
 		max-width: 100%;
 	  }
    }
-   #logo #text:has(h1) {
+#logo #text:has(h1) {
 	position: relative;
 	transform: translateX(-90px);
   }
