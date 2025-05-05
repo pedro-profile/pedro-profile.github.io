@@ -34,7 +34,7 @@ body {
    }
 #logo #text:has(h1) {
 	position: relative;
-	transform: translateX(41px);
+	transform: translateX(42px);
   }
 
 
