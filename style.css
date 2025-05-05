@@ -37,7 +37,7 @@ font-size: 3rem;
 #logo #text:has(h1) {
 	position: relative;
 	top: -3rem;
-	transform: translateX(2.2rem);
+	transform: translateX(2rem);
 	font-family: Snell Roundhand, cursive;
 
   }
