@@ -17,7 +17,7 @@ body {
 	font-weight: bold;
 }
 
-/* 
+
 #logo img,h1 {
 	display:flex;
 	align-items:center;
@@ -39,7 +39,7 @@ body {
 	transform: translateX(4.2rem);
 	font-family: Snell Roundhand, cursive                    ;
   }
-*/
+*
 
 #header  {
 	position: relative;
