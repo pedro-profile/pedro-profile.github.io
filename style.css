@@ -420,7 +420,7 @@ sec tion-portfolio {
 	overflow: hidden;
 	height: 65px;
 	width: 65px;
-	blo ck-size: 500px;
+	block-size: 5px;
  /* Sets the width of the element in a vertical writing mode */
 	writi ng-mode: vertical-lr;
  /* Example writing mode */;
