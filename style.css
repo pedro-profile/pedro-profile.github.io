@@ -422,7 +422,7 @@ sec tion-portfolio {
 	width: 5rem;
 	block-size: 10rem;
  /* Sets the width of the element in a vertical writing mode */
-	writing-mode: horizontal-lr;
+	writing-mode: vertical-lr;
  /* Example writing mode */;
 }
 
