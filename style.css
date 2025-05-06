@@ -447,7 +447,7 @@ sec tion-linux {
     backgr ound-image: url('images/yellow.png');
     background-repeat: no-repeat;
     back ground-size: cover;
-    background-size: 100% 1000px;
+    background-size: 100% 1000rem;
     height: 100vh;
   }
 
