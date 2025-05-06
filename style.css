@@ -409,7 +409,7 @@ sec tion-portfolio {
 	display: flex;
 	justify-content: space-between;
  /* Optional: Adds space between blocks */
- 	width: 5rem;
+ 	width: 50rem;
 	text-align: left;
 }
 
