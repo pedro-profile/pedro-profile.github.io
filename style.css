@@ -418,8 +418,8 @@ sec tion-portfolio {
 	border: 1px solid #ECEDE8;
 	margin: 10px 10px;
 	overflow: hidden;
-	height: 265px;
-	width: 265px;
+	height: 65px;
+	width: 65px;
 	blo ck-size: 500px;
  /* Sets the width of the element in a vertical writing mode */
 	writi ng-mode: vertical-lr;
