@@ -416,7 +416,7 @@ sec tion-portfolio {
 	flex: 1;
  /* Allows blocks to grow and shrink equally */
 	border: 1px solid #ECEDE8;
-	mar gin: 10px 10px;
+	margin: 10px 10px;
 	overflow: hidden;
 	height: 10rem;
 	wid th: 5rem;
