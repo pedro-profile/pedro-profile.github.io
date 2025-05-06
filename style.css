@@ -407,7 +407,7 @@ sec tion-portfolio {
 
 #portfolio-row1, #portfolio-row2 {
 	display: flex;
-	justify-content: space-between;
+	just ify-content: space-between;
  /* Optional: Adds space between blocks */
  	width: 50rem;
 	text-align: left;
