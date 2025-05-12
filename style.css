@@ -317,7 +317,7 @@ font-size: 3rem;
 
 
 /*--- stack-header | Start ---*/
-.stack-header h3 {
+.stack-header h3,h4 {
 	color: #c0c0c0;
 	font-size: 48px;
 }
