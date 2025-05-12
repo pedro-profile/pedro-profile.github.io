@@ -1,0 +1,719 @@
+body {
+	background: #1B1B25;
+	text-align: center;
+	display: block;
+	margin: 8px;
+}
+
+#main {
+	width: 100%;
+	height: 100%;
+	min-width: 1000px;
+	min-height: 1000px;
+}
+
+.work-urls a {
+	color: #01b3f7;
+	font-weight: bold;
+}
+
+
+#logo img,h1 {
+display: flex;
+align-items: center;
+position: relative;
+max-width: 11.25rem;
+height: auto;
+top: 40px;
+right: 150px;
+color: white;
+font-size: 3rem;
+
+	img {
+		max-width: 100%;
+	  }
+   }
+ 
+#logo #text:has(h1) {
+	position: relative;
+	top: -3rem;
+	transform: translateX(2rem);
+	font-family: Snell Roundhand, cursive;
+
+  }
+
+
+#header  {
+	position: relative;
+	top: 150px; 
+   }
+
+/*Pure CSS Picture Frame - Start - https://codepen.io/Brian_Gioia/pen/egabNm */
+/* Frame-Photo - Start */
+#frame-photo {
+	position: relative;
+	bottom:80px;
+  }
+
+.bg__loyout-wrapper {
+	position: relative;
+	t op: 0px;
+	max-width: 100%;
+	height: 25vh;
+	backg round-color: #536dfe;
+  }
+  
+  .bg__picture {
+	max-width: 100%;
+	height: 100%;
+	overflow: hidden;
+  }
+  
+  .bg__picture-wrapper {
+	max-width: 100%;
+	height: 100%;
+	padding-top: 48px;
+	padding-bottom: 48px;
+	padding-left: 52px;
+	padding-right: 52px;
+	overflow: hidden;
+	position: relative;
+  }
+  
+  .bg__frame-inner-shadow-outer {
+	max-width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	padding-left: 16px;
+	padding-right: 16px;
+	z-index: 9;
+	position: absolute;
+  }
+  
+  .bg__frame-inner-shadow {
+	max-width: 100%;
+	height: 100%;
+	-webkit-box-shadow: inset 6px 8px 16px -8px #000001;
+	-moz-box-shadow: inset 68px 8px 16px -8px #000001;
+	box-shadow: inset 6px 8px 16px -8px #000001;
+	opacity: 0.6;
+  }
+  
+  .bg__frame-inner-shine-outer {
+	max-width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	padding-left: 16px;
+	padding-right: 16px;
+	z-index: 9;
+	position: absolute;
+  }
+  
+  .bg__frame-inner-shine {
+	max-width: 100%;
+	height: 100%;
+	-webkit-box-shadow: inset -48px -8px 58px -14px #212121;
+	-moz-box-shadow: inset -4px -8px 58px -14px #212121;
+	box-shadow: inset -4px -8px 58px -14px #212121;
+	opacity: 0.4;
+  }
+  
+  .bg__frame-inner-photo-shadow-outer {
+	max-width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	padding-top: 48px;
+	padding-bottom: 48px;
+	padding-left: 52px;
+	padding-right: 52px;
+	z-index: 9;
+	position: absolute;
+  }
+  
+  .bg__frame-inner-photo-shadow {
+	max-width: 100%;
+	height: 100%;
+	-webkit-box-shadow: inset -2px 1px 12px -1px #212121;
+	-moz-box-shadow: inset -2px -1px 12px -1px #212121;
+	box-shadow: inset -2px -1px 12px -1px #212121;
+	opacity: 0.2;
+  }
+  
+  .bg__frame {
+	background-color: #eceff1;
+	height: 500px;
+	width: 727px;
+	margin: -170px -270px;
+	position: absolute;
+	left: 40.3%;
+	top: 0%;
+	border: 1px solid;
+	border-color: rgba(33, 33, 33, 0.9) rgba(33, 33, 33, 0.9);
+	box-shadow: 3px 6px 10px -2px rgba(0, 0, 0, 0.3), inset 0 1px 0 #212121, inset 1px 0 0 #232323, inset 0 -1px 0 #212121, inset -1px 0 0 #232323, inset 0 2px 0 #242425, inset 2px 0 0 #262728, inset 0 -2px 0 #242425, inset -2px 0 0 #262728, inset 0 3px 0 #26272a, inset 3px 0 0 #24252c, inset 0 -3px 0 #26272a, inset -3px 0 0 #24252c, inset 0 4px 0 #292a2e, inset 4px 0 0 #2e2e31, inset 0 -4px 0 #292a2e, inset -4px 0 0 #2e2e31, inset 0 5px 0 #2b2c33, inset 5px 0 0 #313235, inset 0 -5px 0 #2b2c33, inset -5px 0 0 #313235, inset 0 6px 0 #2e2f37, inset 6px 0 0 #353539, inset 0 -6px 0 #2e2f37, inset -6px 0 0 #353539, inset 0 7px 0 #30323c, inset 7px 0 0 #38393e, inset 0 -7px 0 #30323c, inset -7px 0 0 #38393e, inset 0 8px 0 #333540, inset 8px 0 0 #3c3d42, inset 0 -8px 0 #333540, inset -8px 0 0 #3c3d42, inset 0 9px 0 #353844, inset 9px 0 0 #3f4147, inset 0 -9px 0 #353844, inset -9px 0 0 #3f4147, inset 0 10px 0 #383b49, inset 10px 0 0 #43444b, inset 0 -10px 0 #383b49, inset -10px 0 0 #43444b, inset 0 11px 0 #3a3d4d, inset 11px 0 0 #474850, inset 0 -11px 0 #3a3d4d, inset -11px 0 0 #474850, inset 0 12px 0 #3d4052, inset 12px 0 0 #4a4c54, inset 0 -12px 0 #3d4052, inset -12px 0 0 #4a4c54, inset 0 13px 0 #3f4356, inset 13px 0 0 #4a4c54, inset 0 -13px 0 #3f4356, inset -13px 0 0 #4a4c54, inset 0 14px 0 #3d4052, inset 14px 0 0 #474850, inset 0 -14px 0 #3d4052, inset -14px 0 0 #474850, inset 0 15px 0 #3a3d4d, inset 15px 0 0 #43444b, inset 0 -15px 0 #3a3d4d, inset -15px 0 0 #43444b, inset 0 16px 0 #383b49, inset 16px 0 0 #3f4147, inset 0 -16px 0 #383b49, inset -16px 0 0 #3f4147;
+  }
+  /* Frame-Photo - End */
+/*Pure CSS Picture Frame - End */
+
+/*--- <div id="contacts"> | Start ---*/  
+@media only screen and (max-width: 480px) {
+	#pedro img {
+		width: 110%;
+	}
+}
+
+
+#contacts p {
+	text-align: center;
+	line-height: 0px;
+	color: #fff;
+}
+
+@media only screen and (max-width: 480px) {
+    #contacts h2 {
+            font-size: 24px!important;
+        }
+    }
+
+#contacts h3,h4 {
+	text-align: center;
+	line-height: 0px;
+	co lor: rgba(61, 61, 90, 0.616);
+	color: #fff;
+	font-size: 30px;
+	font-weight: 900;
+}
+/* - smartphones, iPhone, portrait 480x320 phones*/
+@media only screen and (max-width: 480px) {
+#contacts h3,h4 {
+		font-size: 16px!important;
+	}
+}
+
+#contacts h4 {
+	text-align: center;
+	co lor: rgba(61, 61, 90, 0.616);
+	color: #fff;
+	font-size: 20px;
+	font-weight: 900;
+}
+/*pt1 - Desktop*/
+#pt1 h2,h3 {
+	display: inline-block;
+	text-align: center;
+	font-size: 30px;
+	box-sha dow: 3px 6px 10px -2px rgba(0, 0, 0, 0.3);
+}
+/*pt1 - smartphones, iPhone, portrait 480x320 phones*/
+@media only screen and (max-width: 480px) {
+	#pt1 h3,h2 {
+		font-size: 20px;
+	}
+}
+/*pt2 - Desktop*/
+.pt2 h2,h3 {
+	display: inline-block;
+	text-align: center;
+	font-size: 30px;
+	box-shadow: 3px 6px 10px -2px rgba(0, 0, 0, 0.3);
+}
+/*pt2 - smartphones, iPhone, portrait 480x320 phones*/
+@media only screen and (max-width: 480px) {
+	.pt2 h3,h2 {
+		font-size: 20px;
+	}
+}
+
+#self-employed p,h2,h4 {
+	display: inline-block;
+	text-align: center;
+	posi tion: relative;
+	t op: 6px;
+	color: white;
+}
+
+@media only screen and (max-width: 480px) {
+	#self-employed img {
+		text-align: center;
+		width: 25rem;
+	}
+}
+
+/*phone - Desktop*/
+#phone h2,h3 {
+}
+/*phone - smartphones, iPhone, portrait 480x320 phones*/
+@media only screen and (max-width: 480px) {
+	#phone h3,h2 {
+		font-size: 18px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+    #teams i { 
+            font-size: 40px !important;
+        }
+    }
+@media only screen and (max-width: 480px) {
+    #teams span {
+            font-size: 15px !important;
+        }
+    }
+
+/* Teams Icon Color Filter - Start */
+#filter-teams{
+	filter: invert(68%) sepia(64%) saturate(724%) hue-rotate(5deg) brightness(113%) contrast(104%);
+		}
+/* Teams Icon Color Filter - End */
+
+.join p {
+	display: inline-block;
+	text-align: center;
+	color: grey;
+	font-size: 150px;
+}
+
+.join h1 {
+	display: inline-block;
+	text-align: center;
+	color: grey;
+	font-size: 150px;
+}
+
+.join h2 {
+	display: inline-block;
+	text-align: center;
+	color: grey;
+	font-size: 150px;
+}
+
+.join h3 {
+	display: inline-block;
+	text-align: center;
+	color: grey;
+	font-size: 60px;
+}
+
+.join h4 {
+	display: inline-block;
+	text-align: center;
+	color: grey;
+	font-size: 60px;
+}
+
+.join.section.element h3, h4, p, {
+	display: inline-block;
+	text-align: right;
+	color: grey;
+	font-size: 60px;
+}
+/*--- <div id="contacts"> | End --- */
+
+
+/*--- stack-header | Start ---*/
+.stack-header h3 {
+	color: #c0c0c0;
+	font-size: 48px;
+}
+
+@media only screen and (max-width: 480px) {
+	.stack-header h3 {
+		font-size: 35px;
+	}
+}
+/*--- stack-header | End ---*/
+
+
+/*--- Languages - START ---*/
+#languages h5 {
+color: white;
+font-size: 2.1rem;
+}
+/*--- Languages - START ---*/
+
+
+/*--- Profile - START */
+#pedro-carvalho {
+	position: relative;
+	bottom: 25px;
+}
+@media only screen and (max-width: 480px) { 
+.mobile-break { 
+
+
+
+	content: "\a";
+
+	display: none;
+    display: block;
+    display: inline-block;
+    white-space: pre-line; /* collapse WS, preserve LB */
+	white-space: pre;
+    font-size: 15px !important;
+        }
+    }
+/*--- Profile - END */
+
+
+/*--- Portfolio | START ---*/
+sec tion-portfolio {
+    di splay: block;
+    display: inline-block;
+
+    height:26rem;
+    height: 500px; /* Set the height of the element */
+    width: 100%;
+    pad ding: 0 7%;
+    margin: 0;
+    max-width: 100%;
+    background-image: url('images/wp.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 25% 50%;
+    height: 100vh;
+  }
+
+
+#mai n-portfolio{
+    di splay: block;
+    display: inline-block;
+    he ight:26rem;
+    height: 500px; /* Set the height of the element */
+    width: 50%;
+    padding: 0 7%;
+    margin: 0;
+    max-width: 100%;
+    background-image: url('images/wp.png');
+    background-repeat: no-repeat;
+    backgr ound-size: cover;
+    background-size: 25% 50%;
+    height: 100vh;
+}
+
+
+
+.portfolio-join p {
+	display: inline-block;
+	text-align: center;
+	color: #01b3f7;
+	font-size: 50px;
+}
+
+#portfolio-row1, #portfolio-row2 {
+	display: flex;
+	justify-content: space-between;
+ /* Optional: Adds space between blocks */
+ 	width: 50rem;
+	text-align: left;
+}
+
+.block {
+	flex: 1;
+ /* Allows blocks to grow and shrink equally */
+	border: 1px solid #ECEDE8;
+	margin: 10px 10px;
+	overflow: hidden;
+	height: 9rem;
+	block-size: 10rem;
+ /* Sets the width of the element in a vertical writing mode */
+	writing-mode: vertical-lr;
+ /* Example writing mode */;
+}
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+/*--- Portfolio | END ---*/  
+
+
+/*--- Linux CLI | START ---*/ 
+sec tion-linux {
+    di splay: block;
+    display: inline-block;
+    he ight:26rem;
+    height: 500px; /* Set the height of the element */
+    width: 50%;
+    padding: 0 7%;
+    margin: 0;
+    max-width: 100%;
+    backgr ound-image: url('images/yellow.png');
+    background-repeat: no-repeat;
+    back ground-size: cover;
+    background-size: 100% 1000px;
+    height: 100vh;
+  }
+
+
+  p re, input {
+    --tw-text-opacity: 1;
+  color: rgba(110,231,183,var(--tw-text-opacity));
+    font-size: .875rem;
+  line-height: 1.25rem;
+white-space: nowrap;
+}
+
+#ter minal > div.flex.items-center > input {
+ color: white;
+  font-size: .875rem;
+  line-height: 1.25rem;
+}
+
+
+p re {
+white-space: pre-wrap;       /* css-3 */
+white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+white-space: -pre-wrap;      /* Opera 4-6 */
+white-space: -o-pre-wrap;    /* Opera 7 */
+word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+/*--- Linux CLI | END ---*/
+
+
+/*--- WORK | START ---*/
+
+
+/* Crane Animation - END */
+
+/* Crane Animation - END */
+
+
+/*--- WORK | END ---*/
+
+
+/* Hobby Section - START */
+/* Hobbies Img Color Filter - Start */
+
+#filter-hobbies{
+	filter: invert(68%) sepia(64%) saturate(724%) hue-rotate(5deg) brightness(113%) contrast(104%);
+		}
+/* Hobbies Img Color Filter - End */
+
+/*Pure CSS Picture Frame - Start - https://codepen.io/Brian_Gioia/pen/egabNm */
+/* Frame-Guitar - Start */
+#frame-guitar {
+	position: relative;
+	top: 130px;
+  }
+
+.bg__loyout-wrapper {
+	position: relative;
+	t op: 0px;
+	max-width: 100%;
+	height: 25vh;
+	backg round-color: #536dfe;
+  }
+  
+  .bg__picture {
+	max-width: 100%;
+	height: 100%;
+	overflow: hidden;
+  }
+  
+  .bg__picture-wrapper {
+	max-width: 100%;
+	height: 100%;
+	padding-top: 48px;
+	padding-bottom: 48px;
+	padding-left: 52px;
+	padding-right: 52px;
+	overflow: hidden;
+	position: relative;
+  }
+  
+  .bg__frame-inner-shadow-outer {
+	max-width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	padding-left: 16px;
+	padding-right: 16px;
+	z-index: 9;
+	position: absolute;
+  }
+  
+  .bg__frame-inner-shadow {
+	max-width: 100%;
+	height: 100%;
+	-webkit-box-shadow: inset 6px 8px 16px -8px #000001;
+	-moz-box-shadow: inset 68px 8px 16px -8px #000001;
+	box-shadow: inset 6px 8px 16px -8px #000001;
+	opacity: 0.6;
+  }
+  
+  .bg__frame-inner-shine-outer {
+	max-width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	padding-left: 16px;
+	padding-right: 16px;
+	z-index: 9;
+	position: absolute;
+  }
+  
+  .bg__frame-inner-shine {
+	max-width: 100%;
+	height: 100%;
+	-webkit-box-shadow: inset -48px -8px 58px -14px #212121;
+	-moz-box-shadow: inset -4px -8px 58px -14px #212121;
+	box-shadow: inset -4px -8px 58px -14px #212121;
+	opacity: 0.4;
+  }
+  
+  .bg__frame-inner-photo-shadow-outer {
+	max-width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	padding-top: 48px;
+	padding-bottom: 48px;
+	padding-left: 52px;
+	padding-right: 52px;
+	z-index: 9;
+	position: absolute;
+  }
+  
+  .bg__frame-inner-photo-shadow {
+	max-width: 100%;
+	height: 100%;
+	-webkit-box-shadow: inset -2px 1px 12px -1px #212121;
+	-moz-box-shadow: inset -2px -1px 12px -1px #212121;
+	box-shadow: inset -2px -1px 12px -1px #212121;
+	opacity: 0.2;
+  }
+  
+  .bg__frame_guitar {
+	background-color: #1B1B25;
+	height: 500px;
+	width: 727px;
+	margin: -170px -270px;
+	position: absolute;
+	left: 40.3%;
+	top: 0%;
+	border: 1px solid;
+	border-color: rgba(33, 33, 33, 0.9) rgba(33, 33, 33, 0.9);
+	box-shadow: 3px 6px 10px -2px rgba(0, 0, 0, 0.3), inset 0 1px 0 #212121, inset 1px 0 0 #232323, inset 0 -1px 0 #212121, inset -1px 0 0 #232323, inset 0 2px 0 #242425, inset 2px 0 0 #262728, inset 0 -2px 0 #242425, inset -2px 0 0 #262728, inset 0 3px 0 #26272a, inset 3px 0 0 #24252c, inset 0 -3px 0 #26272a, inset -3px 0 0 #24252c, inset 0 4px 0 #292a2e, inset 4px 0 0 #2e2e31, inset 0 -4px 0 #292a2e, inset -4px 0 0 #2e2e31, inset 0 5px 0 #2b2c33, inset 5px 0 0 #313235, inset 0 -5px 0 #2b2c33, inset -5px 0 0 #313235, inset 0 6px 0 #2e2f37, inset 6px 0 0 #353539, inset 0 -6px 0 #2e2f37, inset -6px 0 0 #353539, inset 0 7px 0 #30323c, inset 7px 0 0 #38393e, inset 0 -7px 0 #30323c, inset -7px 0 0 #38393e, inset 0 8px 0 #333540, inset 8px 0 0 #3c3d42, inset 0 -8px 0 #333540, inset -8px 0 0 #3c3d42, inset 0 9px 0 #353844, inset 9px 0 0 #3f4147, inset 0 -9px 0 #353844, inset -9px 0 0 #3f4147, inset 0 10px 0 #383b49, inset 10px 0 0 #43444b, inset 0 -10px 0 #383b49, inset -10px 0 0 #43444b, inset 0 11px 0 #3a3d4d, inset 11px 0 0 #474850, inset 0 -11px 0 #3a3d4d, inset -11px 0 0 #474850, inset 0 12px 0 #3d4052, inset 12px 0 0 #4a4c54, inset 0 -12px 0 #3d4052, inset -12px 0 0 #4a4c54, inset 0 13px 0 #3f4356, inset 13px 0 0 #4a4c54, inset 0 -13px 0 #3f4356, inset -13px 0 0 #4a4c54, inset 0 14px 0 #3d4052, inset 14px 0 0 #474850, inset 0 -14px 0 #3d4052, inset -14px 0 0 #474850, inset 0 15px 0 #3a3d4d, inset 15px 0 0 #43444b, inset 0 -15px 0 #3a3d4d, inset -15px 0 0 #43444b, inset 0 16px 0 #383b49, inset 16px 0 0 #3f4147, inset 0 -16px 0 #383b49, inset -16px 0 0 #3f4147;
+  }
+  /* Frame-Guitar - End */
+/*Pure CSS Picture Frame - End */
+
+#hobbies img {
+	height:10%;
+	width: 10%;
+ }
+
+
+/* Hobby Section - END */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--- <div id="solutions-array"> | Start ---*/
+#secure-solutions h3 {
+	color: #fff;
+	font-size: 25px;
+}
+
+@media only screen and (max-width: 480px) {
+	#secure-solutions img {
+		width: 15%;
+		font-size: 0px;
+	}
+}
+
+
+/*phone & desktop*/
+#solutions-array h3 {
+	color: #fef90a;
+	font-size: 30px;
+}
+
+#solutions-array p {
+	color: #fff;
+	font-size: 20px;
+}
+/*phone - smartphones, iPhone, portrait 480x320 phones*/
+
+@media only screen and (max-width: 480px) {
+	#solutions-array h3 {
+		dis play: inline-block;
+		white-space: pre-line;
+		text-align: center;
+		color: #fef90a;
+		font-size: 20px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	#solutions-array p {
+		color: #fff;
+		font-size: 20px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	#domain img {
+		width: 100%;
+		font-size: 0px;
+	}
+}
+
+/*--- <div id="solutions-array"> | End ---*/
+
+.section-paragraphs p {
+	color: #fff;
+	font-size: 20px;
+}
+
+h3 {
+	text-align: center;
+	color: rgba(61, 61, 90, 0.616);
+	font-size: 100px;
+	font-weight: 900;
+}
+
+.center {
+	text-align: center;
+}
+
+hr {
+	height: 2px;
+	border-width: 0;
+	color: gray;
+	background-color: gray;
+}
+
+hr ::after {
+}
+
+.custom-hr {
+	height: 2px;
+	border-width: 0;
+	color: gray;
+	background-color: gray;
+	width: 50%;
+	text-align: left;
+	margin-left: 0;
+}
