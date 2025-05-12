@@ -1,0 +1,489 @@
+body {
+	background: #1B1B25;
+	color: #fff;
+	font-family: "Josefin Sans", sans-serif;
+}
+
+/* Logo Image - START */
+#logo img,h1 {
+	display: flex;
+	align-items: center;
+	position: relative;
+	max-width: 11.25rem;
+	height: auto;
+	top: 40px;
+	right: 150px;
+	color: white;
+	font-size: 3rem;
+	
+		img {
+			max-width: 100%;
+		  }
+	   }
+	 
+	#logo #text:has(h1) {
+		position: relative;
+		top: -1rem;
+		transform: translateX(2rem);
+		font-family: Snell Roundhand, cursive;
+	
+	  }
+/* Logo Image - END */
+
+
+.sections_top {
+position:relative;
+top: 70px;
+}
+
+/* Teams Icon Color Filter - Start */
+.filter-yellow{
+	filter: invert(68%) sepia(64%) saturate(724%) hue-rotate(5deg) brightness(113%) contrast(104%);
+		}
+/* Teams Icon Color Filter - End */
+
+.separator {
+	width: 30%;
+}
+.title {
+	margin-top: 100px;
+	margin-bottom: 10px;
+	font-size: 40px;
+}
+.title a {
+	color: #fff;
+}
+.title a:hover {
+	text-decoration: none;
+	font-weight: bold;
+}
+.title hr {
+	width: 75%;
+}
+.join p, h1{
+	display: inline-block;
+	text-align: center;
+	li ne-height: 25px;
+	margin: 0;
+	gap: 1rem;
+	marg in-block-start: 1em;
+	wh ite-space: nowrap;
+}
+
+
+
+/* Stage lights - Start */ 
+
+/* Stage lights - End */
+
+
+
+
+#pedro h1{
+	disp lay: inline-block;
+	position: relative;
+	height: 50px;
+	bottom: -20px; 
+	right: 193px; 
+  	font-family: "Schoolbell";  
+	font-size: 52px; 
+	transform: scale(1, 1.5);
+  	line-height: 1.2;
+  	text-transform: none;
+  	dis play: block;
+  	transform: rotate(-16deg) !important;
+  	margin: auto;
+  	font-weight: normal;
+  	letter-spacing: 0px;
+}
+#ring h1{
+	disp lay: inline-block;
+	position: relative;
+	height: 50px;
+	bottom: 80px; 
+	right: 19px; 
+  	font-family: "sans-serif";  
+	font-size: 45px; 
+	transform: scale(1, 1.5);
+  	line-height: 1.2;
+  	text-transform: none;
+  	dis play: block;
+  	transform: rotate(-5deg) !important;
+  	margin: auto;
+  	font-weight: normal;
+  	letter-spacing: 0px;
+}
+#cv h1{
+	disp lay: inline-block;
+	position: relative;
+	height: 50px;
+	bottom: 96px;
+	left: 175px; 
+  	font-family: "Schoolbell";  
+	font-size: 52px; 
+	transform: scale(1, 1.5);
+  	line-height: 1.2;
+  	text-transform: none;
+  	dis play: block;
+  	transform: rotate(14deg) !important;
+  	margin: auto;
+  	font-weight: normal;
+  	letter-spacing: 0px;
+}
+
+
+/* SVG Flying Saucer - https://codepen.io/chrisgannon/pen/NqyWOw - Start */
+bo dy{
+	background-color:#00001A;
+	overflow:hidden;
+	text-align:center;
+  }
+  bo dy, ht ml {
+	  height: 100%;
+	  width: 100%;
+	  margin: 0;
+	  padding: 0;
+  }
+  
+  .container{
+	width:100%;
+	height:100%;
+  }
+  
+  svg{
+	width:100%;
+	height:100%;
+  }
+  
+/* SVG Flying Saucer - End */
+
+/* Star Wars Effect - Start */
+/*body {
+  /* Force the body to fill the entire screen * /
+  width: 10%;
+  height: 10%;
+  /* Hide elements that flow outside the viewable space * /
+  overflow: hidden;
+  /* Black background for the screen * /
+  background: #000;
+}*/
+
+.star-wars {
+	/* Flexbox to center the entire element on the screen */
+	display: flex;
+	justify-content: center;
+	/* This is a magic number based on the context in which this snippet is used and effects the perspective */
+	height: 100px;
+	/* This sets allows us to transform the text on a 3D plane, and is somewhat a magic number */
+	perspective: 400px;
+	/* The rest is totally up to personal styling preferences */
+	pos ition: relative;
+	to p: 200px;
+	color: #feda4a;
+	font-family: 'Pathway Gothic One', sans-serif;
+	font-size: 100%;
+	font-weight: 600;
+	letter-spacing: 6px;
+	line-height: 150%;
+	text-align: justify;
+  }
+  
+  .crawl {
+	/* Position the element so we can adjust the top property in the animation */
+	position: relative;
+	/* Making sure the text is fully off the screen at the start and end of the animation */
+	top: -100px;
+	/* Defines the skew origin at the very center when we apply transforms on the animation */
+	transform-origin: 50% 100%;
+  }
+  
+  /* We're calling this animation "crawl" */
+  @keyframes crawl {
+	0% {
+	  /* The element starts below the screen */
+	  top: 0;
+	  /* Rotate the text 20 degrees but keep it close to the viewer */
+	  transform: rotateX(20deg) translateZ(0);
+	}
+	100% { 
+	  /* This is a magic number, but using a big one to make sure the text is fully off the screen at the end */
+	  top: -6000px;
+	  /* Slightly increasing the rotation at the end and moving the text far away from the viewer */
+	  transform: rotateX(25deg) translateZ(-2500px);
+	}
+  }
+  
+  .crawl {
+	/* Position the element so we can adjust the top property in the animation */
+	position: relative;
+	/* Defines the skew origin at the very center when we apply transforms on the animation */
+	transform-origin: 50% 100%;
+	/* Adds the crawl animation, which plays for one minute */
+	animation: crawl 60s linear;
+  }
+  
+  .fade {
+	position: relative;
+	width: 100%;
+	min-height: 60vh;
+	top: -25px;
+	background-image: linear-gradient(0deg, transparent, black 75%);
+	z-index: 1;
+  }
+/* Star Wars Effect - End */
+
+
+
+
+
+/*.frame {
+	border: 5px solid black; /* Width, style, color * /
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); /* Horizontal offset, vertical offset, blur radius, color * /
+	width: 700px; /* Adjust based on your needs * /
+	height: 400px; /* Adjust based on your needs * /
+	border: 10px solid #fff; /* Black border * /
+	overflow: hidden; /* Ensures the image doesn't overflow the frame * /
+	box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3); /* Adds shadow * /
+	background-image: linear-gradient(to top, #ccc, #eee);
+	border: 10px solid transparent;
+	border-image: linear-gradient(to right, red, blue);
+	border-image-slice: 1;
+  }*/
+  
+/*.frame img {
+	max-width: 100%;
+	height: auto;
+  }*/
+
+  
+/*  
+/* CSS 3-D Beveled Picture Frame - https://codepen.io/john_skowronski/pen/Egqqjy * /
+ * {
+	padding:					0;
+	margin:						0;
+	box-sizing:				border-box;
+	}
+
+figure {
+	height:						500px;
+	width:						727px;
+	margin:						1em auto;
+	}
+
+.outerBevel { /* of frame * /
+	box-shadow:				4px 6px 12px 0 black;
+	border-width:			5px;
+	border-style:			solid;
+	border-color:			rgb(109, 84, 58) rgb(24, 19, 13) rgb(24, 19, 13) rgb(109, 84, 58);
+	}
+
+.flatSurface { /* of frame * /
+	border:						12px solid rgb(65, 40, 16);
+	}
+
+.innerBevel { /* of frame * /
+	border-width:			5px;
+	border-style:			solid;
+	border-color:			rgb(24, 19, 13)	rgb(109, 84, 58) rgb(109, 84, 58) rgb(24, 19, 13);
+	}
+
+.map { /* including mat and gold beveled edge of mat * /
+	display:					block;
+	clear:						both;
+	height:						100%;
+	width:						100%;
+	padding:					7.5% 7.5% 10% 7.5%; /* Mat width * /
+	background-color:	rgb(255,249,224); 	/* Mat color * /
+	border-width:			3px;	/* Gold edge of mat * /
+	border-style:			solid;
+	border-color:			rgb(207, 166, 0) rgb(207, 166, 0) rgb(145, 110, 0) rgb(145, 110, 0);
+	}
+*/
+
+/*Pure CSS Picture Frame - Start - https://codepen.io/Brian_Gioia/pen/egabNm */
+.bg__loyout-wrapper {
+	position: relative;
+	t op: 0px;
+	max-width: 100%;
+	height: 25vh;
+	backg round-color: #536dfe;
+  }
+  
+  .bg__picture {
+	max-width: 100%;
+	height: 100%;
+	overflow: hidden;
+  }
+  
+  .bg__picture-wrapper {
+	max-width: 100%;
+	height: 100%;
+	padding-top: 48px;
+	padding-bottom: 48px;
+	padding-left: 52px;
+	padding-right: 52px;
+	overflow: hidden;
+	position: relative;
+  }
+  
+  .bg__frame-inner-shadow-outer {
+	max-width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	padding-left: 16px;
+	padding-right: 16px;
+	z-index: 9;
+	position: absolute;
+  }
+  
+  .bg__frame-inner-shadow {
+	max-width: 100%;
+	height: 100%;
+	-webkit-box-shadow: inset 6px 8px 16px -8px #000001;
+	-moz-box-shadow: inset 68px 8px 16px -8px #000001;
+	box-shadow: inset 6px 8px 16px -8px #000001;
+	opacity: 0.6;
+  }
+  
+  .bg__frame-inner-shine-outer {
+	max-width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	padding-left: 16px;
+	padding-right: 16px;
+	z-index: 9;
+	position: absolute;
+  }
+  
+  .bg__frame-inner-shine {
+	max-width: 100%;
+	height: 100%;
+	-webkit-box-shadow: inset -48px -8px 58px -14px #212121;
+	-moz-box-shadow: inset -4px -8px 58px -14px #212121;
+	box-shadow: inset -4px -8px 58px -14px #212121;
+	opacity: 0.4;
+  }
+  
+  .bg__frame-inner-photo-shadow-outer {
+	max-width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	padding-top: 48px;
+	padding-bottom: 48px;
+	padding-left: 52px;
+	padding-right: 52px;
+	z-index: 9;
+	position: absolute;
+  }
+  
+  .bg__frame-inner-photo-shadow {
+	max-width: 100%;
+	height: 100%;
+	-webkit-box-shadow: inset -2px 1px 12px -1px #212121;
+	-moz-box-shadow: inset -2px -1px 12px -1px #212121;
+	box-shadow: inset -2px -1px 12px -1px #212121;
+	opacity: 0.2;
+  }
+  
+  .bg__frame {
+	background-color: #eceff1;
+	height: 500px;
+	width: 727px;
+	margin: -170px -270px;
+	position: absolute;
+	left: 40.3%;
+	top: 63%;
+	border: 1px solid;
+	border-color: rgba(33, 33, 33, 0.9) rgba(33, 33, 33, 0.9);
+	box-shadow: 3px 6px 10px -2px rgba(0, 0, 0, 0.3), inset 0 1px 0 #212121, inset 1px 0 0 #232323, inset 0 -1px 0 #212121, inset -1px 0 0 #232323, inset 0 2px 0 #242425, inset 2px 0 0 #262728, inset 0 -2px 0 #242425, inset -2px 0 0 #262728, inset 0 3px 0 #26272a, inset 3px 0 0 #24252c, inset 0 -3px 0 #26272a, inset -3px 0 0 #24252c, inset 0 4px 0 #292a2e, inset 4px 0 0 #2e2e31, inset 0 -4px 0 #292a2e, inset -4px 0 0 #2e2e31, inset 0 5px 0 #2b2c33, inset 5px 0 0 #313235, inset 0 -5px 0 #2b2c33, inset -5px 0 0 #313235, inset 0 6px 0 #2e2f37, inset 6px 0 0 #353539, inset 0 -6px 0 #2e2f37, inset -6px 0 0 #353539, inset 0 7px 0 #30323c, inset 7px 0 0 #38393e, inset 0 -7px 0 #30323c, inset -7px 0 0 #38393e, inset 0 8px 0 #333540, inset 8px 0 0 #3c3d42, inset 0 -8px 0 #333540, inset -8px 0 0 #3c3d42, inset 0 9px 0 #353844, inset 9px 0 0 #3f4147, inset 0 -9px 0 #353844, inset -9px 0 0 #3f4147, inset 0 10px 0 #383b49, inset 10px 0 0 #43444b, inset 0 -10px 0 #383b49, inset -10px 0 0 #43444b, inset 0 11px 0 #3a3d4d, inset 11px 0 0 #474850, inset 0 -11px 0 #3a3d4d, inset -11px 0 0 #474850, inset 0 12px 0 #3d4052, inset 12px 0 0 #4a4c54, inset 0 -12px 0 #3d4052, inset -12px 0 0 #4a4c54, inset 0 13px 0 #3f4356, inset 13px 0 0 #4a4c54, inset 0 -13px 0 #3f4356, inset -13px 0 0 #4a4c54, inset 0 14px 0 #3d4052, inset 14px 0 0 #474850, inset 0 -14px 0 #3d4052, inset -14px 0 0 #474850, inset 0 15px 0 #3a3d4d, inset 15px 0 0 #43444b, inset 0 -15px 0 #3a3d4d, inset -15px 0 0 #43444b, inset 0 16px 0 #383b49, inset 16px 0 0 #3f4147, inset 0 -16px 0 #383b49, inset -16px 0 0 #3f4147;
+  }
+/*Pure CSS Picture Frame - End */
+
+
+#ser vices {
+position:relative;
+bottom: 650px;
+	}
+#serv ices p{
+	fo nt-size: 28px;
+	fo nt-weight: 900;
+}
+
+.work {
+	display: flex;
+	justify-content: center;
+}
+.work a {
+	color: #ffffff;
+	font-size: 50px;
+}
+.work a:hover {
+	text-decoration: none;
+	font-weight: bold;
+}
+.work hr {
+	width: 75%;
+}
+.tel {
+	display: flex;
+	justify-content: center;
+}
+.tel a {
+	color: #fff000;
+}
+.tel a:hover {
+	text-decoration: none;
+	font-weight: bold;
+}
+.tel hr {
+	width: 75%;
+}
+.summary {
+	padding: 20px;
+}
+.summary p {
+	font-size: 1.6rem;
+	letter-spacing: 0.2rem;
+}
+.work-experience {
+	padding: 20px;
+}
+.work-experience .experience-title {
+	margin-top: 50px;
+}
+.work-experience .experience-summary {
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+.work-experience p {
+	font-size: 1.6rem;
+	letter-spacing: 0.2rem;
+}
+.dates h3 {
+	disp lay: block;
+	max-width: 100%;
+}
+.education {
+	padding: 30px;
+}
+.education a {
+	color: #fff000;
+	font-size: 20px;
+}
+.education a:hover {
+	text-decoration: none;
+	font-weight: bold;
+}
+.education hr {
+	width: 75%;
+}
+
+
+
