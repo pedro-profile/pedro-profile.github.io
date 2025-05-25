@@ -48,6 +48,18 @@ font-size: 3rem;
 	top: 150px; 
    }
 
+  
+   .join p,h1,h2,h3,h4,h5{
+	display: inline-block;
+	text-align: center;
+	li ne-height: 25px;
+	margin: 0;
+	gap: 1rem;
+	marg in-block-start: 1em;
+	wh ite-space: nowrap;
+}
+
+
 /*Pure CSS Picture Frame - Start - https://codepen.io/Brian_Gioia/pen/egabNm */
 /* Frame-Photo - Start */
 #frame-photo {
@@ -330,12 +342,21 @@ font-size: 3rem;
 /*--- stack-header | End ---*/
 
 
+/*--- other-tech - START ---*/
+
+#other-tech h5 {
+	margin-left: 10px;
+	}
+
+/*--- other-tech - END ---*/
+
+
 /*--- Languages - START ---*/
 #languages h5 {
 color: white;
 font-size: 2.1rem;
 }
-/*--- Languages - START ---*/
+/*--- Languages - END ---*/
 
 
 /*--- Profile - START */
