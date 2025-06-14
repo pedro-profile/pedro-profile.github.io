@@ -239,7 +239,7 @@ body {
 #self-employed p,h2,h4 {
 	display: inline-block;
 	text-align: center;
-	posi tion: relative;
+	/*posi tion: relative;*/
 	/*t op: 6px;*/
 	color: white;
 }
