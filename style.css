@@ -487,19 +487,19 @@ body {
 	height: 100vh;
 }*/
 
-/*p re, input {
+p re, input {
 	--tw-text-opacity: 1;
 	color: rgba(110,231,183,var(--tw-text-opacity));
 	font-size: .875rem;
 	line-height: 1.25rem;
 	white-space: nowrap;
-}*/
+}
 
-#ter minal > div.flex.items-center > input {
+/*#ter minal > div.flex.items-center > input {
 	color: white;
 	font-size: .875rem;
 	line-height: 1.25rem;
-}
+}*/
 
 p re {
 	white-space: pre-wrap;
