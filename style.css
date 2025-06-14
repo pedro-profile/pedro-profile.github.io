@@ -698,7 +698,7 @@ p re {
 
 @media only screen and (max-width: 480px) {
 	#solutions-array h3 {
-		dis play: inline-block;
+		/*dis play: inline-block;
 		white-space: pre-line;
 		text-align: center;
 		color: #fef90a;
