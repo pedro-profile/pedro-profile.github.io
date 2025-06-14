@@ -64,7 +64,7 @@ body {
 
 .bg__loyout-wrapper {
 	position: relative;
-	t op: 0px;
+	/*t op: 0px;*/
 	max-width: 100%;
 	height: 25vh;
 	backg round-color: #536dfe;
