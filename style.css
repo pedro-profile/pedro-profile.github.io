@@ -47,7 +47,7 @@ body {
 .join p,h1,h2,h3,h4,h5 {
 	display: inline-block;
 	text-align: center;
-	li ne-height: 25px;
+	/*li ne-height: 25px;*/
 	margin: 0;
 	gap: 1rem;
 	marg in-block-start: 1em;
