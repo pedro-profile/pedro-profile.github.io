@@ -314,7 +314,7 @@ body {
 	font-size: 60px;
 }
 
-.join.section.element h3, h4, p, {
+.join.section.element h3, h4, p {
 	display: inline-block;
 	text-align: right;
 	color: grey;
