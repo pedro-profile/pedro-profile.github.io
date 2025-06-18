@@ -520,7 +520,7 @@ word-wrap: break-word;       /* Internet Explorer 5.5+ */
 /* Hobby Section - START */
 /* Hobbies Img Color Filter - Start */
 
-#filter-hobbies{
+#fil ter-hobbies{
 	filter: invert(68%) sepia(64%) saturate(724%) hue-rotate(5deg) brightness(113%) contrast(104%);
 		}
 /* Hobbies Img Color Filter - End */
