@@ -56,7 +56,7 @@ font-size: 3rem;
 
 
 /*Pure CSS Picture Frame - Start - https://codepen.io/Brian_Gioia/pen/egabNm */
-/* Frame-Photo - Start */
+/* Frame-Photo - Start */#filter
 #frame-photo {
 	position: relative;
 	bottom:80px;
@@ -330,7 +330,7 @@ font-family: Snell Roundhand, cursive;
 	color:white;
 
 #filter-plus-sign {
-	
+
 }
 
 
