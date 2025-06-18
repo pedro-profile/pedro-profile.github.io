@@ -329,6 +329,7 @@ font-family: Snell Roundhand, cursive;
         line-height: 28px;
 	color:white;
 
+	
  -webkit-column-count:3; /* Chrome, Safari, Opera */
    -moz-column-count:3; /* Firefox */
    column-count:3;
