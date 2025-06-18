@@ -329,6 +329,14 @@ font-family: Snell Roundhand, cursive;
         line-height: 28px;
 	color:white;
 
+ -webkit-column-count:3; /* Chrome, Safari, Opera */
+   -moz-column-count:3; /* Firefox */
+   column-count:3;
+   -webkit-column-gap:40px; /* Chrome, Safari, Opera */
+   -moz-column-gap:40px; /* Firefox */
+   column-gap:40px;
+
+
 #filter-plus-sign{
 	filter: invert(82%) sepia(59%) saturate(2%) hue-rotate(285deg) brightness(114%) contrast(101%);
 	font-size: 2rem;
