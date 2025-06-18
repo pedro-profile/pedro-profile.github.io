@@ -236,7 +236,7 @@ font-size: 3rem;
 	}
 }
 
-#self-employed p,h2,h4 {
+#services p,h2,h4 {
 	display: inline-block;
 	text-align: center;
 	posi tion: relative;
@@ -245,7 +245,7 @@ font-size: 3rem;
 }
 
 @media only screen and (max-width: 480px) {
-	#self-employed img {
+	#services img {
 		text-align: center;
 		width: 25rem;
 	}
