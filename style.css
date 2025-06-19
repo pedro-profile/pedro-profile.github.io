@@ -323,7 +323,7 @@ font-size: 3rem;
 
 
 /* About Pedro - START */
-#about-pedro {
+#about-pedro p{
 font-family: Snell Roundhand, cursive;
         font-size: 14px;
         line-height: 28px;
