@@ -75,7 +75,9 @@ operable program or batch file.</div>`)
 
 
 /*--- REPOS | START ---*/
+
 /* Change color of char '|' only - Start/*
 
+/* Change color of char '|' only - Start/*
 
 /*--- REPOS | END ---*/
