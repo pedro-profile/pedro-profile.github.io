@@ -75,7 +75,7 @@ operable program or batch file.</div>`)
 
 
 /*--- REPOS | START ---*/
-/* /*
+/* Change color of chat' /*
 
 
 /*--- REPOS | END ---*/
