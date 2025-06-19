@@ -252,11 +252,11 @@ font-size: 3rem;
 }
 
 /*phone - Desktop*/
-#contact-me h2,h3 {
+#reach-us h2,h3 {
 }
 /*phone - smartphones, iPhone, portrait 480x320 phones*/
 @media only screen and (max-width: 480px) {
-	#phone h3,h2 {
+	#reach-us h3,h2 {
 		font-size: 18px;
 	}
 }
