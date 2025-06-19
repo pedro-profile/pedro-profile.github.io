@@ -75,8 +75,7 @@ operable program or batch file.</div>`)
 
 
 /*--- REPOS | START ---*/
-.|-color p{
-color:white;
 
-}
+
+
 /*--- REPOS | END ---*/
