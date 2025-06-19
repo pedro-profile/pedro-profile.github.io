@@ -330,7 +330,7 @@ font-family: Snell Roundhand, cursive;
 	color:white;
 
 /* CSS Align Paragraphs Horizontally - https://stackoverflow.com/questions/22617157/css-align-paragraphs-horizontally */	 
- -webkit-column-count:3; /* Chrome, Safari, Opera */
+ -webkit-column-count:2; /* Chrome, Safari, Opera */
    -moz-column-count:3; /* Firefox */
    column-count:3;
    -webkit-column-gap:40px; /* Chrome, Safari, Opera */
