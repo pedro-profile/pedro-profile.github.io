@@ -93,6 +93,6 @@ for( var i = 0 ; i < str.length ; ++i ) {
   title.appendChild(SpaceSpan);
  }
 }
-// Change color of char '|' only - Start/*
+// Change color of char '|' only - End
 
 /*--- REPOS | END ---*/
