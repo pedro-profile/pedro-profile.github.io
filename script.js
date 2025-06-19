@@ -76,7 +76,7 @@ operable program or batch file.</div>`)
 
 /*--- REPOS | START ---*/
 
-/* Change color of char '|' only - Start/*
+// Change color of char '|' only - Start
 var title = document.getElementById('title');
 var str = document.getElementById('title').firstChild.nodeValue.replace(/ /g,'<space>');
 title.removeChild(title.firstChild);
