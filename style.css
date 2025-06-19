@@ -335,7 +335,7 @@ font-family: Snell Roundhand, cursive;
    column-count:3;
    -webkit-column-gap:50px; /* Chrome, Safari, Opera */
    -moz-column-gap:50px; /* Firefox */
-   column-gap:40px;
+   column-gap:50px;
 
 
 #filter-plus-sign {
