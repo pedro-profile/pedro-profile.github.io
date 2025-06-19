@@ -558,11 +558,10 @@ word-wrap: break-word;       /* Internet Explorer 5.5+ */
 
 /*--- REPOS | START ---*/
 
-/*--- WORK | START ---*/
+/*--- REPOS | END ---*/
 
 /* Hobby Section - START */
 /* Hobbies Img Color Filter - Start */
-
 #fil ter-hobbies{
 	filter: invert(68%) sepia(64%) saturate(724%) hue-rotate(5deg) brightness(113%) contrast(104%);
 		}
