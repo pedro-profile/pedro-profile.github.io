@@ -322,12 +322,15 @@ font-size: 3rem;
 /*--- <div id="contacts"> | End --- */
 
 
-/* About Pedro - START */
-#about-pedro {
+/* As a Developer - START */
+.align-horizontally {
 font-family: Snell Roundhand, cursive;
         font-size: 14px;
         line-height: 28px;
 	color:white;
+
+   -moz-font-family: "Times New Roman", Times, serif; /* Firefox */
+
 
 /* CSS Align Paragraphs Horizontally - https://stackoverflow.com/questions/22617157/css-align-paragraphs-horizontally */	 
  -webkit-column-count:3; /* Chrome, Safari, Opera */
@@ -343,15 +346,37 @@ font-family: Snell Roundhand, cursive;
 	font-size: 2rem;
 }
 }
+/* As a Developer - END */
 
 
+/* About Pedro - START */
+#about-pedro {
+font-family: Snell Roundhand, cursive;
+        font-size: 14px;
+        line-height: 28px;
+	color:white;
+
+/* CSS Align Paragraphs Horizontally - https://stackoverflow.com/questions/22617157/css-align-paragraphs-horizontally */	 
+ /*-webkit-column-count:3; /* Chrome, Safari, Opera */
+   /*-moz-column-count:3; /* Firefox */
+   /*column-count:3;
+   /*-webkit-column-gap:40px; /* Chrome, Safari, Opera */
+   /*-moz-column-gap:40px; /* Firefox */
+   /*column-gap:40px;*/
+
+
+#filter-plus-sign {
+	filter: invert(82%) sepia(59%) saturate(2%) hue-rotate(285deg) brightness(114%) contrast(101%);
+	font-size: 2rem;
+}
+}
 /* About Pedro - END */
 
 
 /*--- stack-header | Start ---*/
 .stack-header h3 {
 	color: #fff;
-	font-size: 48px;
+	font-size: 45px;
 }
 
 @media only screen and (max-width: 480px) {
