@@ -557,8 +557,8 @@ word-wrap: break-word;       /* Internet Explorer 5.5+ */
 
 
 /*--- REPOS | START ---*/
-.|-color{
-color:w
+.|-color p{
+color:white;
 
 }
 /*--- REPOS | END ---*/
