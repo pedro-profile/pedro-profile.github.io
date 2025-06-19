@@ -77,7 +77,22 @@ operable program or batch file.</div>`)
 /*--- REPOS | START ---*/
 
 /* Change color of char '|' only - Start/*
-
+var title = document.getElementById('title');
+var str = document.getElementById('title').firstChild.nodeValue.replace(/ /g,'<space>');
+title.removeChild(title.firstChild);
+str = str.split('<space>');
+for( var i = 0 ; i < str.length ; ++i ) {
+ var newNode = document.createElement('span');
+ var newText = document.createTextNode(str[i]);
+ newNode.appendChild(newText);
+ title.appendChild(newText)
+ if(i!=str.length-1) {
+  var SpaceSpan = document.createElement('span');
+  SpaceSpan.className = 'space';
+  SpaceSpan.appendChild(document.createTextNode(' '));
+  title.appendChild(SpaceSpan);
+ }
+}
 /* Change color of char '|' only - Start/*
 
 /*--- REPOS | END ---*/
