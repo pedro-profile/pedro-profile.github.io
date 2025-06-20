@@ -165,6 +165,27 @@ font-size: 3rem;
 	border-color: rgba(33, 33, 33, 0.9) rgba(33, 33, 33, 0.9);
 	box-shadow: 3px 6px 10px -2px rgba(0, 0, 0, 0.3), inset 0 1px 0 #212121, inset 1px 0 0 #232323, inset 0 -1px 0 #212121, inset -1px 0 0 #232323, inset 0 2px 0 #242425, inset 2px 0 0 #262728, inset 0 -2px 0 #242425, inset -2px 0 0 #262728, inset 0 3px 0 #26272a, inset 3px 0 0 #24252c, inset 0 -3px 0 #26272a, inset -3px 0 0 #24252c, inset 0 4px 0 #292a2e, inset 4px 0 0 #2e2e31, inset 0 -4px 0 #292a2e, inset -4px 0 0 #2e2e31, inset 0 5px 0 #2b2c33, inset 5px 0 0 #313235, inset 0 -5px 0 #2b2c33, inset -5px 0 0 #313235, inset 0 6px 0 #2e2f37, inset 6px 0 0 #353539, inset 0 -6px 0 #2e2f37, inset -6px 0 0 #353539, inset 0 7px 0 #30323c, inset 7px 0 0 #38393e, inset 0 -7px 0 #30323c, inset -7px 0 0 #38393e, inset 0 8px 0 #333540, inset 8px 0 0 #3c3d42, inset 0 -8px 0 #333540, inset -8px 0 0 #3c3d42, inset 0 9px 0 #353844, inset 9px 0 0 #3f4147, inset 0 -9px 0 #353844, inset -9px 0 0 #3f4147, inset 0 10px 0 #383b49, inset 10px 0 0 #43444b, inset 0 -10px 0 #383b49, inset -10px 0 0 #43444b, inset 0 11px 0 #3a3d4d, inset 11px 0 0 #474850, inset 0 -11px 0 #3a3d4d, inset -11px 0 0 #474850, inset 0 12px 0 #3d4052, inset 12px 0 0 #4a4c54, inset 0 -12px 0 #3d4052, inset -12px 0 0 #4a4c54, inset 0 13px 0 #3f4356, inset 13px 0 0 #4a4c54, inset 0 -13px 0 #3f4356, inset -13px 0 0 #4a4c54, inset 0 14px 0 #3d4052, inset 14px 0 0 #474850, inset 0 -14px 0 #3d4052, inset -14px 0 0 #474850, inset 0 15px 0 #3a3d4d, inset 15px 0 0 #43444b, inset 0 -15px 0 #3a3d4d, inset -15px 0 0 #43444b, inset 0 16px 0 #383b49, inset 16px 0 0 #3f4147, inset 0 -16px 0 #383b49, inset -16px 0 0 #3f4147;
   }
+
+  /* Photo-Glow Effect - Start | https://dev.to/ajones_codes/css-smart-image-glow-1deg */
+#gl ow {
+  filter: drop-shadow(0 0 0.75rem rgb(10, 10, 10));
+  background-repeat: no-repeat;
+  background-image: url("/mask.png");
+   /* This line: backdrop-filter: blur(15px) saturate(3);
+   1. blurs the background so we can see it around the 
+         image as "glow"
+   2. increases the background saturation so we get colors 
+         back after the shadow effect dulls them out
+  */
+  backdrop-filter: blur(15px) saturate(3);
+   ...
+  /* These lines prevent the border box from clipping the blur 
+     effect */
+  pad ding: 20px;
+  mar gin: -20px;
+}
+  /* Photo-Glow Effect - End | https://dev.to/ajones_codes/css-smart-image-glow-1deg */
+  
   /* Frame-Photo - End */
 /*Pure CSS Picture Frame - End */
 
@@ -338,7 +359,7 @@ font-family: Snell Roundhand, cursive;
    column-count:3;
    -webkit-column-gap:40px; /* Chrome, Safari, Opera */
    -moz-column-gap:40px; /* Firefox */
-   column-gap:40px;
+   column-gap:40px;   
 
 
 #filter-plus-sign {
