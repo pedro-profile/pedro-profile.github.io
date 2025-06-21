@@ -44,7 +44,7 @@ body.addEventListener("click" , e =>{
     }
 });
 
-// Responsive Navigation Menu Bar + dark mode - START - https://codepen.io/a7rarpress/pen/poxzgeq //
+// Responsive Navigation Menu Bar + dark mode - END //
 
 
 // --- Linux CLI | START --- //
