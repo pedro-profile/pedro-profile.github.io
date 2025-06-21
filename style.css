@@ -323,7 +323,7 @@ body.dark .search-field i{
 
     .nav-bar .nav-links{
         flex-direction: column;
-        padding-top: 130px;
+        padding-top: 30px;
     }
 
     .nav-links li a{
