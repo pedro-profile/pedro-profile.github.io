@@ -670,12 +670,31 @@ font-family: Snell Roundhand, cursive;
 
 
 /* About Pedro - START */
-#about-pedro {
+#As-a-Developer {
+
+.font-Snell-Roundhand {
 font-family: Snell Roundhand, cursive;
         font-size: 14px;
         line-height: 28px;
 	color:white;
 
+   -moz-font-family: "Times New Roman", Times, serif; /* Firefox */
+}
+
+.align-horizontally {
+/* CSS Align Paragraphs Horizontally - https://stackoverflow.com/questions/22617157/css-align-paragraphs-horizontally */	 
+ -webkit-column-count:3; /* Chrome, Safari, Opera */
+   -moz-column-count:3; /* Firefox */
+   column-count:3;
+   -webkit-column-gap:40px; /* Chrome, Safari, Opera */
+   -moz-column-gap:40px; /* Firefox */
+   column-gap:40px;   
+   
+#filter-plus-sign {
+	filter: invert(82%) sepia(59%) saturate(2%) hue-rotate(285deg) brightness(114%) contrast(101%);
+	font-size: 2rem;
+}
+}
 }
 /* About Pedro - END */
 
