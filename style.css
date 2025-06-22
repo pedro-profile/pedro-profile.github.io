@@ -681,7 +681,7 @@ font-family: Snell Roundhand, cursive;
    -moz-font-family: "Times New Roman", Times, serif; /* Firefox */
 }
 
-.ali gn-horizontally {
+.al gn-horizontally {
 /* CSS Align Paragraphs Horizontally - https://stackoverflow.com/questions/22617157/css-align-paragraphs-horizontally */	 
  -webkit-column-count:3; /* Chrome, Safari, Opera */
    -moz-column-count:3; /* Firefox */
