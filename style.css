@@ -641,7 +641,7 @@ body.dark .search-field i{
 
 /* As a Developer - START */
 #As-a-Developer {
-	
+
 .font-Snell-Roundhand {
 font-family: Snell Roundhand, cursive;
         font-size: 14px;
@@ -659,8 +659,6 @@ font-family: Snell Roundhand, cursive;
    -webkit-column-gap:40px; /* Chrome, Safari, Opera */
    -moz-column-gap:40px; /* Firefox */
    column-gap:40px;   
-
-
 #filter-plus-sign {
 	filter: invert(82%) sepia(59%) saturate(2%) hue-rotate(285deg) brightness(114%) contrast(101%);
 	font-size: 2rem;
