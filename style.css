@@ -672,7 +672,7 @@ font-family: Snell Roundhand, cursive;
 /* About Pedro - START */
 #About-Pedro {
 
-.About-Pedro a { 
+#About-Pedro a { 
     color: red; /* Normal state */ 
 } 
  
@@ -680,7 +680,7 @@ font-family: Snell Roundhand, cursive;
     color: blue; /* Color when hovered */ 
 } 
  
-.my-div a:visited { 
+.About-Pedro a:visited { 
     color: purple; /* Color for visited links */ 
 } 
 
