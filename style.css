@@ -676,11 +676,11 @@ font-family: Snell Roundhand, cursive;
     color: red; /* Normal state */ 
 } 
  
-.About-Pedro a:hover { 
+#About-Pedro a:hover { 
     color: blue; /* Color when hovered */ 
 } 
  
-.About-Pedro a:visited { 
+#About-Pedro a:visited { 
     color: purple; /* Color for visited links */ 
 } 
 
