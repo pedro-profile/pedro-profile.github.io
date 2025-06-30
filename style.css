@@ -675,16 +675,15 @@ font-family: Snell Roundhand, cursive;
 
 #About-Pedro a { 
     color: red; /* Normal state */ 
-} 
+}
  
 #About-Pedro a:hover { 
     color: white; /* Color when hovered */ 
-} 
+}
  
 #About-Pedro a:visited { 
     color: purple; /* Color for visited links */ 
-} 
-
+}
 
 .font-Snell-Roundhand {
 font-family: Snell Roundhand, cursive;
